@@ -38,6 +38,8 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageDepartments_SAS = new System.Windows.Forms.TabPage();
             this.tabPageEmployees_SAS = new System.Windows.Forms.TabPage();
             this.tabPageProviders_SAS = new System.Windows.Forms.TabPage();
+            this.guna2ButtonInfo_SAS = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2ButtonHelp_SAS = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo_SAS)).BeginInit();
             this.tabListOfSections_SAS.SuspendLayout();
             this.SuspendLayout();
@@ -73,16 +75,18 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             // tabListOfSections_SAS
             // 
             this.tabListOfSections_SAS.Alignment = System.Windows.Forms.TabAlignment.Left;
+            this.tabListOfSections_SAS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabListOfSections_SAS.Controls.Add(this.tabPageDepartments_SAS);
             this.tabListOfSections_SAS.Controls.Add(this.tabPageEmployees_SAS);
             this.tabListOfSections_SAS.Controls.Add(this.tabPageProviders_SAS);
-            this.tabListOfSections_SAS.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tabListOfSections_SAS.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.tabListOfSections_SAS.ItemSize = new System.Drawing.Size(180, 90);
-            this.tabListOfSections_SAS.Location = new System.Drawing.Point(0, 84);
+            this.tabListOfSections_SAS.Location = new System.Drawing.Point(0, 112);
             this.tabListOfSections_SAS.Name = "tabListOfSections_SAS";
             this.tabListOfSections_SAS.SelectedIndex = 0;
-            this.tabListOfSections_SAS.Size = new System.Drawing.Size(1157, 602);
+            this.tabListOfSections_SAS.Size = new System.Drawing.Size(1157, 621);
             this.tabListOfSections_SAS.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.tabListOfSections_SAS.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
             this.tabListOfSections_SAS.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -109,7 +113,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageDepartments_SAS.Location = new System.Drawing.Point(184, 4);
             this.tabPageDepartments_SAS.Name = "tabPageDepartments_SAS";
             this.tabPageDepartments_SAS.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDepartments_SAS.Size = new System.Drawing.Size(969, 594);
+            this.tabPageDepartments_SAS.Size = new System.Drawing.Size(969, 613);
             this.tabPageDepartments_SAS.TabIndex = 0;
             this.tabPageDepartments_SAS.Text = "Магазины";
             // 
@@ -133,12 +137,50 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageProviders_SAS.TabIndex = 2;
             this.tabPageProviders_SAS.Text = "Поставщики";
             // 
+            // guna2ButtonInfo_SAS
+            // 
+            this.guna2ButtonInfo_SAS.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2ButtonInfo_SAS.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ButtonInfo_SAS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonInfo_SAS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonInfo_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2ButtonInfo_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2ButtonInfo_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.guna2ButtonInfo_SAS.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.guna2ButtonInfo_SAS.ForeColor = System.Drawing.Color.White;
+            this.guna2ButtonInfo_SAS.Image = ((System.Drawing.Image)(resources.GetObject("guna2ButtonInfo_SAS.Image")));
+            this.guna2ButtonInfo_SAS.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ButtonInfo_SAS.Location = new System.Drawing.Point(785, 20);
+            this.guna2ButtonInfo_SAS.Name = "guna2ButtonInfo_SAS";
+            this.guna2ButtonInfo_SAS.Size = new System.Drawing.Size(66, 53);
+            this.guna2ButtonInfo_SAS.TabIndex = 3;
+            // 
+            // guna2ButtonHelp_SAS
+            // 
+            this.guna2ButtonHelp_SAS.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2ButtonHelp_SAS.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ButtonHelp_SAS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonHelp_SAS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonHelp_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2ButtonHelp_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2ButtonHelp_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.guna2ButtonHelp_SAS.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.guna2ButtonHelp_SAS.ForeColor = System.Drawing.Color.White;
+            this.guna2ButtonHelp_SAS.Image = ((System.Drawing.Image)(resources.GetObject("guna2ButtonHelp_SAS.Image")));
+            this.guna2ButtonHelp_SAS.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ButtonHelp_SAS.Location = new System.Drawing.Point(680, 20);
+            this.guna2ButtonHelp_SAS.Name = "guna2ButtonHelp_SAS";
+            this.guna2ButtonHelp_SAS.Size = new System.Drawing.Size(66, 53);
+            this.guna2ButtonHelp_SAS.TabIndex = 3;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.ClientSize = new System.Drawing.Size(1157, 686);
+            this.ClientSize = new System.Drawing.Size(1157, 733);
+            this.Controls.Add(this.guna2ButtonHelp_SAS);
+            this.Controls.Add(this.guna2ButtonInfo_SAS);
             this.Controls.Add(this.tabListOfSections_SAS);
             this.Controls.Add(this.labelLogo_SAS);
             this.Controls.Add(this.pictureBoxLogo_SAS);
@@ -164,6 +206,8 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
         private System.Windows.Forms.TabPage tabPageDepartments_SAS;
         private System.Windows.Forms.TabPage tabPageEmployees_SAS;
         private System.Windows.Forms.TabPage tabPageProviders_SAS;
+        private Guna.UI2.WinForms.Guna2Button guna2ButtonInfo_SAS;
+        private Guna.UI2.WinForms.Guna2Button guna2ButtonHelp_SAS;
     }
 }
 

@@ -22,5 +22,8 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
         {
 
         }
+
+        //private void guna2CircleButton1_Click(object sender, EventArgs e)
+        //{    this.Close();}
     }
 }
