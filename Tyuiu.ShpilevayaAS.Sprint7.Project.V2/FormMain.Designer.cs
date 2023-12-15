@@ -40,6 +40,9 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageProviders_SAS = new System.Windows.Forms.TabPage();
             this.guna2ButtonInfo_SAS = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ButtonHelp_SAS = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonClose_SAS = new System.Windows.Forms.Button();
+            this.buttonMinimize_SAS = new System.Windows.Forms.Button();
+            this.buttonChange_SAS = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo_SAS)).BeginInit();
             this.tabListOfSections_SAS.SuspendLayout();
             this.SuspendLayout();
@@ -115,7 +118,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageDepartments_SAS.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageDepartments_SAS.Size = new System.Drawing.Size(969, 613);
             this.tabPageDepartments_SAS.TabIndex = 0;
-            this.tabPageDepartments_SAS.Text = "Магазины";
+            this.tabPageDepartments_SAS.Text = "Филиалы";
             // 
             // tabPageEmployees_SAS
             // 
@@ -123,7 +126,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageEmployees_SAS.Location = new System.Drawing.Point(184, 4);
             this.tabPageEmployees_SAS.Name = "tabPageEmployees_SAS";
             this.tabPageEmployees_SAS.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageEmployees_SAS.Size = new System.Drawing.Size(969, 594);
+            this.tabPageEmployees_SAS.Size = new System.Drawing.Size(969, 613);
             this.tabPageEmployees_SAS.TabIndex = 1;
             this.tabPageEmployees_SAS.Text = "Сотрудники";
             // 
@@ -133,7 +136,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageProviders_SAS.Location = new System.Drawing.Point(184, 4);
             this.tabPageProviders_SAS.Name = "tabPageProviders_SAS";
             this.tabPageProviders_SAS.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProviders_SAS.Size = new System.Drawing.Size(969, 594);
+            this.tabPageProviders_SAS.Size = new System.Drawing.Size(969, 613);
             this.tabPageProviders_SAS.TabIndex = 2;
             this.tabPageProviders_SAS.Text = "Поставщики";
             // 
@@ -154,6 +157,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.guna2ButtonInfo_SAS.Name = "guna2ButtonInfo_SAS";
             this.guna2ButtonInfo_SAS.Size = new System.Drawing.Size(66, 53);
             this.guna2ButtonInfo_SAS.TabIndex = 3;
+            this.guna2ButtonInfo_SAS.Click += new System.EventHandler(this.guna2ButtonInfo_SAS_Click);
             // 
             // guna2ButtonHelp_SAS
             // 
@@ -172,6 +176,44 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.guna2ButtonHelp_SAS.Name = "guna2ButtonHelp_SAS";
             this.guna2ButtonHelp_SAS.Size = new System.Drawing.Size(66, 53);
             this.guna2ButtonHelp_SAS.TabIndex = 3;
+            this.guna2ButtonHelp_SAS.Click += new System.EventHandler(this.guna2ButtonHelp_SAS_Click);
+            // 
+            // buttonClose_SAS
+            // 
+            this.buttonClose_SAS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonClose_SAS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClose_SAS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.buttonClose_SAS.Image = ((System.Drawing.Image)(resources.GetObject("buttonClose_SAS.Image")));
+            this.buttonClose_SAS.Location = new System.Drawing.Point(1080, 4);
+            this.buttonClose_SAS.Name = "buttonClose_SAS";
+            this.buttonClose_SAS.Size = new System.Drawing.Size(73, 61);
+            this.buttonClose_SAS.TabIndex = 4;
+            this.buttonClose_SAS.UseVisualStyleBackColor = true;
+            this.buttonClose_SAS.Click += new System.EventHandler(this.buttonClose_SAS_Click);
+            // 
+            // buttonMinimize_SAS
+            // 
+            this.buttonMinimize_SAS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonMinimize_SAS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinimize_SAS.Image = ((System.Drawing.Image)(resources.GetObject("buttonMinimize_SAS.Image")));
+            this.buttonMinimize_SAS.Location = new System.Drawing.Point(994, 12);
+            this.buttonMinimize_SAS.Name = "buttonMinimize_SAS";
+            this.buttonMinimize_SAS.Size = new System.Drawing.Size(46, 45);
+            this.buttonMinimize_SAS.TabIndex = 5;
+            this.buttonMinimize_SAS.UseVisualStyleBackColor = true;
+            this.buttonMinimize_SAS.Click += new System.EventHandler(this.buttonMinimize_SAS_Click);
+            // 
+            // buttonChange_SAS
+            // 
+            this.buttonChange_SAS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonChange_SAS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonChange_SAS.Image = ((System.Drawing.Image)(resources.GetObject("buttonChange_SAS.Image")));
+            this.buttonChange_SAS.Location = new System.Drawing.Point(1046, 12);
+            this.buttonChange_SAS.Name = "buttonChange_SAS";
+            this.buttonChange_SAS.Size = new System.Drawing.Size(52, 45);
+            this.buttonChange_SAS.TabIndex = 6;
+            this.buttonChange_SAS.UseVisualStyleBackColor = true;
+            this.buttonChange_SAS.Click += new System.EventHandler(this.buttonChange_SAS_Click);
             // 
             // FormMain
             // 
@@ -179,6 +221,9 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(1157, 733);
+            this.Controls.Add(this.buttonChange_SAS);
+            this.Controls.Add(this.buttonMinimize_SAS);
+            this.Controls.Add(this.buttonClose_SAS);
             this.Controls.Add(this.guna2ButtonHelp_SAS);
             this.Controls.Add(this.guna2ButtonInfo_SAS);
             this.Controls.Add(this.tabListOfSections_SAS);
@@ -208,6 +253,9 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
         private System.Windows.Forms.TabPage tabPageProviders_SAS;
         private Guna.UI2.WinForms.Guna2Button guna2ButtonInfo_SAS;
         private Guna.UI2.WinForms.Guna2Button guna2ButtonHelp_SAS;
+        private System.Windows.Forms.Button buttonClose_SAS;
+        private System.Windows.Forms.Button buttonMinimize_SAS;
+        private System.Windows.Forms.Button buttonChange_SAS;
     }
 }
 
