@@ -61,6 +61,16 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             }
         }
 
+        private void guna2ButtonInfo_SAS_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipButton_SAS.ToolTipTitle = "Справка";
+        }
+
+        private void guna2ButtonHelp_SAS_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipButton_SAS.ToolTipTitle = "Краткое руководство пользователя";
+        }
+
         //private void guna2CircleButton1_Click(object sender, EventArgs e)
         //{    this.Close();}
     }
