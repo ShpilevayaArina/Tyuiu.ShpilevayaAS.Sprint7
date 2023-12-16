@@ -36,16 +36,16 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.labelLogo_SAS = new System.Windows.Forms.Label();
             this.tabListOfSections_SAS = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPageMainMenu_SAS = new System.Windows.Forms.TabPage();
+            this.TextBoxMainMenu_SAS = new Guna.UI2.WinForms.Guna2TextBox();
             this.tabPageDepartments_SAS = new System.Windows.Forms.TabPage();
             this.tabPageEmployees_SAS = new System.Windows.Forms.TabPage();
+            this.tabPageProviders_SAS = new System.Windows.Forms.TabPage();
             this.guna2ButtonInfo_SAS = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ButtonHelp_SAS = new Guna.UI2.WinForms.Guna2Button();
             this.buttonClose_SAS = new System.Windows.Forms.Button();
             this.buttonMinimize_SAS = new System.Windows.Forms.Button();
             this.buttonChange_SAS = new System.Windows.Forms.Button();
-            this.tabPageProviders_SAS = new System.Windows.Forms.TabPage();
             this.toolTipButton_SAS = new System.Windows.Forms.ToolTip(this.components);
-            this.TextBoxMainMenu_SAS = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo_SAS)).BeginInit();
             this.tabListOfSections_SAS.SuspendLayout();
             this.tabPageMainMenu_SAS.SuspendLayout();
@@ -126,6 +126,35 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageMainMenu_SAS.TabIndex = 0;
             this.tabPageMainMenu_SAS.Text = "Главное меню";
             // 
+            // TextBoxMainMenu_SAS
+            // 
+            this.TextBoxMainMenu_SAS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TextBoxMainMenu_SAS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.TextBoxMainMenu_SAS.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxMainMenu_SAS.DefaultText = resources.GetString("TextBoxMainMenu_SAS.DefaultText");
+            this.TextBoxMainMenu_SAS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxMainMenu_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxMainMenu_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxMainMenu_SAS.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxMainMenu_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.TextBoxMainMenu_SAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxMainMenu_SAS.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TextBoxMainMenu_SAS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(210)))), ((int)(((byte)(65)))));
+            this.TextBoxMainMenu_SAS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxMainMenu_SAS.Location = new System.Drawing.Point(8, 9);
+            this.TextBoxMainMenu_SAS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TextBoxMainMenu_SAS.Multiline = true;
+            this.TextBoxMainMenu_SAS.Name = "TextBoxMainMenu_SAS";
+            this.TextBoxMainMenu_SAS.PasswordChar = '\0';
+            this.TextBoxMainMenu_SAS.PlaceholderText = "";
+            this.TextBoxMainMenu_SAS.ReadOnly = true;
+            this.TextBoxMainMenu_SAS.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TextBoxMainMenu_SAS.SelectedText = "";
+            this.TextBoxMainMenu_SAS.Size = new System.Drawing.Size(955, 597);
+            this.TextBoxMainMenu_SAS.TabIndex = 0;
+            // 
             // tabPageDepartments_SAS
             // 
             this.tabPageDepartments_SAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
@@ -145,6 +174,16 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageEmployees_SAS.Size = new System.Drawing.Size(969, 613);
             this.tabPageEmployees_SAS.TabIndex = 2;
             this.tabPageEmployees_SAS.Text = "Сотрудники";
+            // 
+            // tabPageProviders_SAS
+            // 
+            this.tabPageProviders_SAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.tabPageProviders_SAS.Location = new System.Drawing.Point(184, 4);
+            this.tabPageProviders_SAS.Name = "tabPageProviders_SAS";
+            this.tabPageProviders_SAS.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageProviders_SAS.Size = new System.Drawing.Size(969, 613);
+            this.tabPageProviders_SAS.TabIndex = 3;
+            this.tabPageProviders_SAS.Text = "Поставщики";
             // 
             // guna2ButtonInfo_SAS
             // 
@@ -227,50 +266,11 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.buttonChange_SAS.UseVisualStyleBackColor = true;
             this.buttonChange_SAS.Click += new System.EventHandler(this.buttonChange_SAS_Click);
             // 
-            // tabPageProviders_SAS
-            // 
-            this.tabPageProviders_SAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.tabPageProviders_SAS.Location = new System.Drawing.Point(184, 4);
-            this.tabPageProviders_SAS.Name = "tabPageProviders_SAS";
-            this.tabPageProviders_SAS.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProviders_SAS.Size = new System.Drawing.Size(969, 613);
-            this.tabPageProviders_SAS.TabIndex = 3;
-            this.tabPageProviders_SAS.Text = "Поставщики";
-            // 
             // toolTipButton_SAS
             // 
             this.toolTipButton_SAS.IsBalloon = true;
             this.toolTipButton_SAS.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTipButton_SAS.ToolTipTitle = "Подсказка";
-            // 
-            // TextBoxMainMenu_SAS
-            // 
-            this.TextBoxMainMenu_SAS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TextBoxMainMenu_SAS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.TextBoxMainMenu_SAS.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBoxMainMenu_SAS.DefaultText = resources.GetString("TextBoxMainMenu_SAS.DefaultText");
-            this.TextBoxMainMenu_SAS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TextBoxMainMenu_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TextBoxMainMenu_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBoxMainMenu_SAS.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBoxMainMenu_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.TextBoxMainMenu_SAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxMainMenu_SAS.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxMainMenu_SAS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(210)))), ((int)(((byte)(65)))));
-            this.TextBoxMainMenu_SAS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxMainMenu_SAS.Location = new System.Drawing.Point(8, 9);
-            this.TextBoxMainMenu_SAS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.TextBoxMainMenu_SAS.Multiline = true;
-            this.TextBoxMainMenu_SAS.Name = "TextBoxMainMenu_SAS";
-            this.TextBoxMainMenu_SAS.PasswordChar = '\0';
-            this.TextBoxMainMenu_SAS.PlaceholderText = "";
-            this.TextBoxMainMenu_SAS.ReadOnly = true;
-            this.TextBoxMainMenu_SAS.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TextBoxMainMenu_SAS.SelectedText = "";
-            this.TextBoxMainMenu_SAS.Size = new System.Drawing.Size(955, 597);
-            this.TextBoxMainMenu_SAS.TabIndex = 0;
             // 
             // FormMain
             // 

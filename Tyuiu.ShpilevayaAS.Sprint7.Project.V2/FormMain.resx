@@ -199,9 +199,6 @@
         gwGM/QGBjjOCsRGsu46eP2rWYm8ZKxUgQ9007X8DvaQP073GdAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="toolTipButton_SAS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>208, 17</value>
-  </metadata>
   <data name="guna2ButtonHelp_SAS.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAARUAAAEOCAYAAACn/4O6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
@@ -347,6 +344,9 @@
         AAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="toolTipButton_SAS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>208, 17</value>
+  </metadata>
   <data name="guna2ButtonInfo_SAS.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAARUAAAEOCAYAAACn/4O6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
@@ -482,7 +482,7 @@
   <data name="TextBoxMainMenu_SAS.DefaultText" xml:space="preserve">
     <value>	Добро пожаловать в корпоративное приложение сети магазинов!
 
-	Мы рады приветствовать вас в нашем приложении, которое предоставляет доступ к информации о нашей сети магазинов. У нас есть 86 филиалов, которые расположены в 20 городах. Каждый филиал имеет свой уникальный адрес, и мы уверены, что вы легко найдете интересующую вас информацию.
+	Мы рады приветствовать вас в нашем приложении, которое предоставляет доступ к информации о нашей сети магазинов. В нашу сеть входит 86 филиалов, которые расположены в 20 городах России. Каждый филиал имеет свой уникальный адрес, и мы уверены, что вы легко найдете интересующую вас информацию.
 
 	В нашей сети магазинов работает множество талантливых руководителей, которые обеспечивают эффективное управление каждым филиалом. Мы предоставляем вам возможность узнать информацию обо всех наших руководителях, включая их имена, контактные данные и другую информацию. Вы сможете легко связаться с ними, если у вас возникнут вопросы или потребуется помощь.
 
@@ -692,7 +692,4 @@
         gRmRSCQSicrVbrv9f0p7QrY35dxRAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="toolTipButton_SAS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>208, 17</value>
-  </metadata>
 </root>
