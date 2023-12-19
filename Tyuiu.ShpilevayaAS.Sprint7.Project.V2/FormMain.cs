@@ -71,6 +71,26 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             toolTipButton_SAS.ToolTipTitle = "Краткое руководство пользователя";
         }
 
+        private void TextBoxSearchDepartments_SAS_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBoxSearch_SAS_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPageEmployees_SAS_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBoxSearchDepartments_SAS_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipButton_SAS.ToolTipTitle = "Поиск";
+        }
+
         //private void guna2CircleButton1_Click(object sender, EventArgs e)
         //{    this.Close();}
     }
