@@ -9,14 +9,14 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2.Lib
 {
     public class DataService
     {
-        public string CollectTextFromFile(string path, int row, int column)
+        public string ReadCsv(string path, int rows, int columns)
         {
             string fileData = File.ReadAllText(path);
             fileData = fileData.Replace('\n', '\r');
             string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
 
-            int rows = lines.Length;
-            int columns = lines[0].Split(';').Length;
+            int row = lines.Length;
+            int column = lines[0].Split(';').Length;
 
             string[,] matrix = new string[rows, columns];
 
@@ -32,11 +32,11 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2.Lib
             string res = "";
             for (int i = 0; i < rows; i++)
             {
-                if (i == row)
+                if (i == rows)
                 {
                     for (int j = 0; j < columns; j++)
                     {
-                        if (j == column)
+                        if (j == columns)
                         {
                             res = matrix[i, j];
                         }

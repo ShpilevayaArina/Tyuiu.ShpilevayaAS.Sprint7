@@ -9,8 +9,18 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ValidReadCsv()
         {
+            DataService ds = new DataService();
+
+            string path = @"C:\Users\katri\source\repos\Tyuiu.ShpilevayaAS.Sprint7\Tyuiu.ShpilevayaAS.Sprint7.Project.V2.Test\bin\Debug\InPutFileProjectV2.csv"; ;
+
+            int row = 0;
+            int column = 1;
+            string res = ds.ReadCsv(path, row, column);
+
+            string wait = "1, Екатеринбург";
+            Assert.AreEqual(wait, res);
         }
     }
 }

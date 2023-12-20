@@ -89,6 +89,8 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.Controls.Add(this.pictureBoxLogo_SAS);
             this.Controls.Add(this.buttonClose_SAS);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormUserGuide";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Краткое руководство пользователя";
