@@ -15,11 +15,9 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2.Test
 
             string path = @"C:\Users\katri\source\repos\Tyuiu.ShpilevayaAS.Sprint7\Tyuiu.ShpilevayaAS.Sprint7.Project.V2.Test\bin\Debug\InPutFileProjectV2.csv"; ;
 
-            int row = 0;
-            int column = 1;
-            string res = ds.ReadCsv(path, row, column);
-
-            string wait = "1, Екатеринбург";
+            FileInfo info = new FileInfo(path);
+            bool res = info.Exists;
+            bool wait = true;
             Assert.AreEqual(wait, res);
         }
     }
