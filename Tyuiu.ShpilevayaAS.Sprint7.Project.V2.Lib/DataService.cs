@@ -9,41 +9,45 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2.Lib
 {
     public class DataService
     {
-        public string ReadCsv(string path, int rows, int columns)
+        public string[,] GetDataFromFile(string path)
         {
             string fileData = File.ReadAllText(path);
             fileData = fileData.Replace('\n', '\r');
             string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
+            int rows = lines.Length;
+            int columns = lines[0].Split(';').Length;
 
-            int row = lines.Length;
-            int column = lines[0].Split(';').Length;
-
-            string[,] matrix = new string[rows, columns];
+            string[,] arrayValues = new string[rows, columns];
 
             for (int r = 0; r < rows; r++)
             {
                 string[] line_r = lines[r].Split(';');
                 for (int c = 0; c < columns; c++)
                 {
-                    matrix[r, c] = Convert.ToString(line_r[c]);
+                    arrayValues[r, c] = line_r[c];
                 }
             }
+            return arrayValues;
+        }
+        public bool AddNewDataToFile(string path, string[] line)
+        {
+            bool completed = false;
+            string str = "";
 
-            string res = "";
-            for (int i = 0; i < rows; i++)
+            for (int i = 0; i < line.Length; i++)
             {
-                if (i == rows)
+                if (i != line.Length - 1)
                 {
-                    for (int j = 0; j < columns; j++)
-                    {
-                        if (j == columns)
-                        {
-                            res = matrix[i, j];
-                        }
-                    }
+                    str = str + line[i] + ";";
+                }
+                else
+                {
+                    str = str + line[i];
                 }
             }
-            return res;
+            File.AppendAllText(path, str + Environment.NewLine);
+            completed = true;
+            return completed;
         }
     }
 }
