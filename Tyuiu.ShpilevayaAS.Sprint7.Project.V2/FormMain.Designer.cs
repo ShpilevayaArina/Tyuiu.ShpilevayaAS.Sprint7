@@ -31,6 +31,9 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BorderlessForm_SAS = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.pictureBoxLogo_SAS = new System.Windows.Forms.PictureBox();
             this.labelLogo_SAS = new System.Windows.Forms.Label();
@@ -38,29 +41,31 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageMainMenu_SAS = new System.Windows.Forms.TabPage();
             this.TextBoxMainMenu_SAS = new Guna.UI2.WinForms.Guna2TextBox();
             this.tabPageDepartments_SAS = new System.Windows.Forms.TabPage();
+            this.PictureBoxSearchDepartments_SAS = new Guna.UI2.WinForms.Guna2PictureBox();
             this.tabPageEmployees_SAS = new System.Windows.Forms.TabPage();
+            this.PictureBoxSearchEmpoyees_SAS = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.TextBoxSearchEmpoyees_SAS = new Guna.UI2.WinForms.Guna2TextBox();
             this.tabPageProviders_SAS = new System.Windows.Forms.TabPage();
+            this.PictureBoxSearchProviders_SAS = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.TextBoxSearchProviders_SAS = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ButtonInfo_SAS = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ButtonHelp_SAS = new Guna.UI2.WinForms.Guna2Button();
             this.buttonClose_SAS = new System.Windows.Forms.Button();
             this.buttonMinimize_SAS = new System.Windows.Forms.Button();
             this.buttonChange_SAS = new System.Windows.Forms.Button();
             this.toolTipButton_SAS = new System.Windows.Forms.ToolTip(this.components);
-            this.TextBoxSearchDepartments_SAS = new Guna.UI2.WinForms.Guna2TextBox();
-            this.PictureBoxSearchDepartments_SAS = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.PictureBoxSearchEmpoyees_SAS = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.TextBoxSearchEmpoyees_SAS = new Guna.UI2.WinForms.Guna2TextBox();
-            this.PictureBoxSearchProviders_SAS = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.TextBoxSearchProviders_SAS = new Guna.UI2.WinForms.Guna2TextBox();
+            this.CheckBoxSearchDepartments_SAS = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.DataGridViewDepartments_SAS = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo_SAS)).BeginInit();
             this.tabListOfSections_SAS.SuspendLayout();
             this.tabPageMainMenu_SAS.SuspendLayout();
             this.tabPageDepartments_SAS.SuspendLayout();
-            this.tabPageEmployees_SAS.SuspendLayout();
-            this.tabPageProviders_SAS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxSearchDepartments_SAS)).BeginInit();
+            this.tabPageEmployees_SAS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxSearchEmpoyees_SAS)).BeginInit();
+            this.tabPageProviders_SAS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxSearchProviders_SAS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewDepartments_SAS)).BeginInit();
             this.SuspendLayout();
             // 
             // BorderlessForm_SAS
@@ -170,14 +175,30 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             // tabPageDepartments_SAS
             // 
             this.tabPageDepartments_SAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.tabPageDepartments_SAS.Controls.Add(this.DataGridViewDepartments_SAS);
+            this.tabPageDepartments_SAS.Controls.Add(this.CheckBoxSearchDepartments_SAS);
             this.tabPageDepartments_SAS.Controls.Add(this.PictureBoxSearchDepartments_SAS);
-            this.tabPageDepartments_SAS.Controls.Add(this.TextBoxSearchDepartments_SAS);
             this.tabPageDepartments_SAS.Location = new System.Drawing.Point(184, 4);
             this.tabPageDepartments_SAS.Name = "tabPageDepartments_SAS";
             this.tabPageDepartments_SAS.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageDepartments_SAS.Size = new System.Drawing.Size(969, 613);
             this.tabPageDepartments_SAS.TabIndex = 1;
             this.tabPageDepartments_SAS.Text = "Филиалы";
+            // 
+            // PictureBoxSearchDepartments_SAS
+            // 
+            this.PictureBoxSearchDepartments_SAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.PictureBoxSearchDepartments_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.PictureBoxSearchDepartments_SAS.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxSearchDepartments_SAS.Image")));
+            this.PictureBoxSearchDepartments_SAS.ImageRotate = 0F;
+            this.PictureBoxSearchDepartments_SAS.Location = new System.Drawing.Point(6, 7);
+            this.PictureBoxSearchDepartments_SAS.Name = "PictureBoxSearchDepartments_SAS";
+            this.PictureBoxSearchDepartments_SAS.Size = new System.Drawing.Size(57, 43);
+            this.PictureBoxSearchDepartments_SAS.TabIndex = 1;
+            this.PictureBoxSearchDepartments_SAS.TabStop = false;
+            this.toolTipButton_SAS.SetToolTip(this.PictureBoxSearchDepartments_SAS, "Найти филиал по адресу\r\n");
+            this.PictureBoxSearchDepartments_SAS.Click += new System.EventHandler(this.PictureBoxSearch_SAS_Click);
+            this.PictureBoxSearchDepartments_SAS.MouseEnter += new System.EventHandler(this.PictureBoxSearchDepartments_SAS_MouseEnter);
             // 
             // tabPageEmployees_SAS
             // 
@@ -192,6 +213,45 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageEmployees_SAS.Text = "Сотрудники";
             this.tabPageEmployees_SAS.Click += new System.EventHandler(this.tabPageEmployees_SAS_Click);
             // 
+            // PictureBoxSearchEmpoyees_SAS
+            // 
+            this.PictureBoxSearchEmpoyees_SAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.PictureBoxSearchEmpoyees_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.PictureBoxSearchEmpoyees_SAS.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxSearchEmpoyees_SAS.Image")));
+            this.PictureBoxSearchEmpoyees_SAS.ImageRotate = 0F;
+            this.PictureBoxSearchEmpoyees_SAS.Location = new System.Drawing.Point(6, 7);
+            this.PictureBoxSearchEmpoyees_SAS.Name = "PictureBoxSearchEmpoyees_SAS";
+            this.PictureBoxSearchEmpoyees_SAS.Size = new System.Drawing.Size(57, 43);
+            this.PictureBoxSearchEmpoyees_SAS.TabIndex = 3;
+            this.PictureBoxSearchEmpoyees_SAS.TabStop = false;
+            this.toolTipButton_SAS.SetToolTip(this.PictureBoxSearchEmpoyees_SAS, "Найти руководителя филиала по ФИО");
+            this.PictureBoxSearchEmpoyees_SAS.MouseEnter += new System.EventHandler(this.PictureBoxSearchDepartments_SAS_MouseEnter);
+            // 
+            // TextBoxSearchEmpoyees_SAS
+            // 
+            this.TextBoxSearchEmpoyees_SAS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxSearchEmpoyees_SAS.BorderRadius = 10;
+            this.TextBoxSearchEmpoyees_SAS.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxSearchEmpoyees_SAS.DefaultText = "";
+            this.TextBoxSearchEmpoyees_SAS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxSearchEmpoyees_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxSearchEmpoyees_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxSearchEmpoyees_SAS.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxSearchEmpoyees_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxSearchEmpoyees_SAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxSearchEmpoyees_SAS.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextBoxSearchEmpoyees_SAS.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxSearchEmpoyees_SAS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxSearchEmpoyees_SAS.Location = new System.Drawing.Point(69, 7);
+            this.TextBoxSearchEmpoyees_SAS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TextBoxSearchEmpoyees_SAS.Name = "TextBoxSearchEmpoyees_SAS";
+            this.TextBoxSearchEmpoyees_SAS.PasswordChar = '\0';
+            this.TextBoxSearchEmpoyees_SAS.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxSearchEmpoyees_SAS.PlaceholderText = "";
+            this.TextBoxSearchEmpoyees_SAS.SelectedText = "";
+            this.TextBoxSearchEmpoyees_SAS.Size = new System.Drawing.Size(371, 43);
+            this.TextBoxSearchEmpoyees_SAS.TabIndex = 2;
+            // 
             // tabPageProviders_SAS
             // 
             this.tabPageProviders_SAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
@@ -203,6 +263,45 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageProviders_SAS.Size = new System.Drawing.Size(969, 613);
             this.tabPageProviders_SAS.TabIndex = 3;
             this.tabPageProviders_SAS.Text = "Поставщики";
+            // 
+            // PictureBoxSearchProviders_SAS
+            // 
+            this.PictureBoxSearchProviders_SAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.PictureBoxSearchProviders_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.PictureBoxSearchProviders_SAS.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxSearchProviders_SAS.Image")));
+            this.PictureBoxSearchProviders_SAS.ImageRotate = 0F;
+            this.PictureBoxSearchProviders_SAS.Location = new System.Drawing.Point(6, 7);
+            this.PictureBoxSearchProviders_SAS.Name = "PictureBoxSearchProviders_SAS";
+            this.PictureBoxSearchProviders_SAS.Size = new System.Drawing.Size(57, 43);
+            this.PictureBoxSearchProviders_SAS.TabIndex = 5;
+            this.PictureBoxSearchProviders_SAS.TabStop = false;
+            this.toolTipButton_SAS.SetToolTip(this.PictureBoxSearchProviders_SAS, "Найти поставщика по ФИО\r\n");
+            this.PictureBoxSearchProviders_SAS.MouseEnter += new System.EventHandler(this.PictureBoxSearchDepartments_SAS_MouseEnter);
+            // 
+            // TextBoxSearchProviders_SAS
+            // 
+            this.TextBoxSearchProviders_SAS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxSearchProviders_SAS.BorderRadius = 10;
+            this.TextBoxSearchProviders_SAS.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxSearchProviders_SAS.DefaultText = "";
+            this.TextBoxSearchProviders_SAS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxSearchProviders_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxSearchProviders_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxSearchProviders_SAS.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxSearchProviders_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxSearchProviders_SAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxSearchProviders_SAS.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextBoxSearchProviders_SAS.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxSearchProviders_SAS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxSearchProviders_SAS.Location = new System.Drawing.Point(69, 7);
+            this.TextBoxSearchProviders_SAS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TextBoxSearchProviders_SAS.Name = "TextBoxSearchProviders_SAS";
+            this.TextBoxSearchProviders_SAS.PasswordChar = '\0';
+            this.TextBoxSearchProviders_SAS.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxSearchProviders_SAS.PlaceholderText = "";
+            this.TextBoxSearchProviders_SAS.SelectedText = "";
+            this.TextBoxSearchProviders_SAS.Size = new System.Drawing.Size(371, 43);
+            this.TextBoxSearchProviders_SAS.TabIndex = 4;
             // 
             // guna2ButtonInfo_SAS
             // 
@@ -293,124 +392,83 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.toolTipButton_SAS.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTipButton_SAS.ToolTipTitle = "Подсказка";
             // 
-            // TextBoxSearchDepartments_SAS
+            // CheckBoxSearchDepartments_SAS
             // 
-            this.TextBoxSearchDepartments_SAS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.TextBoxSearchDepartments_SAS.BorderRadius = 10;
-            this.TextBoxSearchDepartments_SAS.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBoxSearchDepartments_SAS.DefaultText = "";
-            this.TextBoxSearchDepartments_SAS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TextBoxSearchDepartments_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TextBoxSearchDepartments_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBoxSearchDepartments_SAS.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBoxSearchDepartments_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.TextBoxSearchDepartments_SAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxSearchDepartments_SAS.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TextBoxSearchDepartments_SAS.ForeColor = System.Drawing.Color.Black;
-            this.TextBoxSearchDepartments_SAS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxSearchDepartments_SAS.Location = new System.Drawing.Point(69, 7);
-            this.TextBoxSearchDepartments_SAS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.TextBoxSearchDepartments_SAS.Name = "TextBoxSearchDepartments_SAS";
-            this.TextBoxSearchDepartments_SAS.PasswordChar = '\0';
-            this.TextBoxSearchDepartments_SAS.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.TextBoxSearchDepartments_SAS.PlaceholderText = "";
-            this.TextBoxSearchDepartments_SAS.SelectedText = "";
-            this.TextBoxSearchDepartments_SAS.Size = new System.Drawing.Size(371, 43);
-            this.TextBoxSearchDepartments_SAS.TabIndex = 0;
-            this.TextBoxSearchDepartments_SAS.TextChanged += new System.EventHandler(this.TextBoxSearchDepartments_SAS_TextChanged);
+            this.CheckBoxSearchDepartments_SAS.AutoSize = true;
+            this.CheckBoxSearchDepartments_SAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.CheckBoxSearchDepartments_SAS.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+            this.CheckBoxSearchDepartments_SAS.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CheckBoxSearchDepartments_SAS.CheckedState.BorderRadius = 0;
+            this.CheckBoxSearchDepartments_SAS.CheckedState.BorderThickness = 0;
+            this.CheckBoxSearchDepartments_SAS.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CheckBoxSearchDepartments_SAS.Font = new System.Drawing.Font("Segoe UI", 12.2F, System.Drawing.FontStyle.Bold);
+            this.CheckBoxSearchDepartments_SAS.Location = new System.Drawing.Point(69, 7);
+            this.CheckBoxSearchDepartments_SAS.Name = "CheckBoxSearchDepartments_SAS";
+            this.CheckBoxSearchDepartments_SAS.Size = new System.Drawing.Size(542, 34);
+            this.CheckBoxSearchDepartments_SAS.TabIndex = 2;
+            this.CheckBoxSearchDepartments_SAS.Text = "Выберите город, в котором расположен филиал";
+            this.CheckBoxSearchDepartments_SAS.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.CheckBoxSearchDepartments_SAS.UncheckedState.BorderRadius = 0;
+            this.CheckBoxSearchDepartments_SAS.UncheckedState.BorderThickness = 0;
+            this.CheckBoxSearchDepartments_SAS.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.CheckBoxSearchDepartments_SAS.UseVisualStyleBackColor = false;
+            this.CheckBoxSearchDepartments_SAS.CheckedChanged += new System.EventHandler(this.CheckBoxSearchDepartments_SAS_CheckedChanged);
             // 
-            // PictureBoxSearchDepartments_SAS
+            // DataGridViewDepartments_SAS
             // 
-            this.PictureBoxSearchDepartments_SAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.PictureBoxSearchDepartments_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.PictureBoxSearchDepartments_SAS.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxSearchDepartments_SAS.Image")));
-            this.PictureBoxSearchDepartments_SAS.ImageRotate = 0F;
-            this.PictureBoxSearchDepartments_SAS.Location = new System.Drawing.Point(6, 7);
-            this.PictureBoxSearchDepartments_SAS.Name = "PictureBoxSearchDepartments_SAS";
-            this.PictureBoxSearchDepartments_SAS.Size = new System.Drawing.Size(57, 43);
-            this.PictureBoxSearchDepartments_SAS.TabIndex = 1;
-            this.PictureBoxSearchDepartments_SAS.TabStop = false;
-            this.toolTipButton_SAS.SetToolTip(this.PictureBoxSearchDepartments_SAS, "Найти филиал по адресу\r\n");
-            this.PictureBoxSearchDepartments_SAS.Click += new System.EventHandler(this.PictureBoxSearch_SAS_Click);
-            this.PictureBoxSearchDepartments_SAS.MouseEnter += new System.EventHandler(this.PictureBoxSearchDepartments_SAS_MouseEnter);
-            // 
-            // PictureBoxSearchEmpoyees_SAS
-            // 
-            this.PictureBoxSearchEmpoyees_SAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.PictureBoxSearchEmpoyees_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.PictureBoxSearchEmpoyees_SAS.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxSearchEmpoyees_SAS.Image")));
-            this.PictureBoxSearchEmpoyees_SAS.ImageRotate = 0F;
-            this.PictureBoxSearchEmpoyees_SAS.Location = new System.Drawing.Point(6, 7);
-            this.PictureBoxSearchEmpoyees_SAS.Name = "PictureBoxSearchEmpoyees_SAS";
-            this.PictureBoxSearchEmpoyees_SAS.Size = new System.Drawing.Size(57, 43);
-            this.PictureBoxSearchEmpoyees_SAS.TabIndex = 3;
-            this.PictureBoxSearchEmpoyees_SAS.TabStop = false;
-            this.toolTipButton_SAS.SetToolTip(this.PictureBoxSearchEmpoyees_SAS, "Найти руководителя филиала по ФИО");
-            this.PictureBoxSearchEmpoyees_SAS.MouseEnter += new System.EventHandler(this.PictureBoxSearchDepartments_SAS_MouseEnter);
-            // 
-            // TextBoxSearchEmpoyees_SAS
-            // 
-            this.TextBoxSearchEmpoyees_SAS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.TextBoxSearchEmpoyees_SAS.BorderRadius = 10;
-            this.TextBoxSearchEmpoyees_SAS.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBoxSearchEmpoyees_SAS.DefaultText = "";
-            this.TextBoxSearchEmpoyees_SAS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TextBoxSearchEmpoyees_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TextBoxSearchEmpoyees_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBoxSearchEmpoyees_SAS.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBoxSearchEmpoyees_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.TextBoxSearchEmpoyees_SAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxSearchEmpoyees_SAS.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TextBoxSearchEmpoyees_SAS.ForeColor = System.Drawing.Color.Black;
-            this.TextBoxSearchEmpoyees_SAS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxSearchEmpoyees_SAS.Location = new System.Drawing.Point(69, 7);
-            this.TextBoxSearchEmpoyees_SAS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.TextBoxSearchEmpoyees_SAS.Name = "TextBoxSearchEmpoyees_SAS";
-            this.TextBoxSearchEmpoyees_SAS.PasswordChar = '\0';
-            this.TextBoxSearchEmpoyees_SAS.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.TextBoxSearchEmpoyees_SAS.PlaceholderText = "";
-            this.TextBoxSearchEmpoyees_SAS.SelectedText = "";
-            this.TextBoxSearchEmpoyees_SAS.Size = new System.Drawing.Size(371, 43);
-            this.TextBoxSearchEmpoyees_SAS.TabIndex = 2;
-            // 
-            // PictureBoxSearchProviders_SAS
-            // 
-            this.PictureBoxSearchProviders_SAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.PictureBoxSearchProviders_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.PictureBoxSearchProviders_SAS.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxSearchProviders_SAS.Image")));
-            this.PictureBoxSearchProviders_SAS.ImageRotate = 0F;
-            this.PictureBoxSearchProviders_SAS.Location = new System.Drawing.Point(6, 7);
-            this.PictureBoxSearchProviders_SAS.Name = "PictureBoxSearchProviders_SAS";
-            this.PictureBoxSearchProviders_SAS.Size = new System.Drawing.Size(57, 43);
-            this.PictureBoxSearchProviders_SAS.TabIndex = 5;
-            this.PictureBoxSearchProviders_SAS.TabStop = false;
-            this.toolTipButton_SAS.SetToolTip(this.PictureBoxSearchProviders_SAS, "Найти поставщика по ФИО\r\n");
-            this.PictureBoxSearchProviders_SAS.MouseEnter += new System.EventHandler(this.PictureBoxSearchDepartments_SAS_MouseEnter);
-            // 
-            // TextBoxSearchProviders_SAS
-            // 
-            this.TextBoxSearchProviders_SAS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.TextBoxSearchProviders_SAS.BorderRadius = 10;
-            this.TextBoxSearchProviders_SAS.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBoxSearchProviders_SAS.DefaultText = "";
-            this.TextBoxSearchProviders_SAS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TextBoxSearchProviders_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TextBoxSearchProviders_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBoxSearchProviders_SAS.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBoxSearchProviders_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.TextBoxSearchProviders_SAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxSearchProviders_SAS.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TextBoxSearchProviders_SAS.ForeColor = System.Drawing.Color.Black;
-            this.TextBoxSearchProviders_SAS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxSearchProviders_SAS.Location = new System.Drawing.Point(69, 7);
-            this.TextBoxSearchProviders_SAS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.TextBoxSearchProviders_SAS.Name = "TextBoxSearchProviders_SAS";
-            this.TextBoxSearchProviders_SAS.PasswordChar = '\0';
-            this.TextBoxSearchProviders_SAS.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.TextBoxSearchProviders_SAS.PlaceholderText = "";
-            this.TextBoxSearchProviders_SAS.SelectedText = "";
-            this.TextBoxSearchProviders_SAS.Size = new System.Drawing.Size(371, 43);
-            this.TextBoxSearchProviders_SAS.TabIndex = 4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.DataGridViewDepartments_SAS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DataGridViewDepartments_SAS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DataGridViewDepartments_SAS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridViewDepartments_SAS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DataGridViewDepartments_SAS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewDepartments_SAS.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DataGridViewDepartments_SAS.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DataGridViewDepartments_SAS.Location = new System.Drawing.Point(69, 60);
+            this.DataGridViewDepartments_SAS.Name = "DataGridViewDepartments_SAS";
+            this.DataGridViewDepartments_SAS.ReadOnly = true;
+            this.DataGridViewDepartments_SAS.RowHeadersVisible = false;
+            this.DataGridViewDepartments_SAS.RowHeadersWidth = 51;
+            this.DataGridViewDepartments_SAS.RowTemplate.Height = 24;
+            this.DataGridViewDepartments_SAS.Size = new System.Drawing.Size(892, 545);
+            this.DataGridViewDepartments_SAS.TabIndex = 3;
+            this.DataGridViewDepartments_SAS.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.DataGridViewDepartments_SAS.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.DataGridViewDepartments_SAS.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.DataGridViewDepartments_SAS.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.DataGridViewDepartments_SAS.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.DataGridViewDepartments_SAS.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.DataGridViewDepartments_SAS.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DataGridViewDepartments_SAS.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DataGridViewDepartments_SAS.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridViewDepartments_SAS.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.DataGridViewDepartments_SAS.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.DataGridViewDepartments_SAS.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridViewDepartments_SAS.ThemeStyle.HeaderStyle.Height = 4;
+            this.DataGridViewDepartments_SAS.ThemeStyle.ReadOnly = true;
+            this.DataGridViewDepartments_SAS.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.DataGridViewDepartments_SAS.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DataGridViewDepartments_SAS.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.DataGridViewDepartments_SAS.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DataGridViewDepartments_SAS.ThemeStyle.RowsStyle.Height = 24;
+            this.DataGridViewDepartments_SAS.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DataGridViewDepartments_SAS.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // FormMain
             // 
@@ -436,11 +494,13 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabListOfSections_SAS.ResumeLayout(false);
             this.tabPageMainMenu_SAS.ResumeLayout(false);
             this.tabPageDepartments_SAS.ResumeLayout(false);
-            this.tabPageEmployees_SAS.ResumeLayout(false);
-            this.tabPageProviders_SAS.ResumeLayout(false);
+            this.tabPageDepartments_SAS.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxSearchDepartments_SAS)).EndInit();
+            this.tabPageEmployees_SAS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxSearchEmpoyees_SAS)).EndInit();
+            this.tabPageProviders_SAS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxSearchProviders_SAS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewDepartments_SAS)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -463,12 +523,13 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
         private System.Windows.Forms.TabPage tabPageProviders_SAS;
         private System.Windows.Forms.ToolTip toolTipButton_SAS;
         private Guna.UI2.WinForms.Guna2TextBox TextBoxMainMenu_SAS;
-        private Guna.UI2.WinForms.Guna2TextBox TextBoxSearchDepartments_SAS;
         private Guna.UI2.WinForms.Guna2PictureBox PictureBoxSearchDepartments_SAS;
         private Guna.UI2.WinForms.Guna2PictureBox PictureBoxSearchEmpoyees_SAS;
         private Guna.UI2.WinForms.Guna2TextBox TextBoxSearchEmpoyees_SAS;
         private Guna.UI2.WinForms.Guna2PictureBox PictureBoxSearchProviders_SAS;
         private Guna.UI2.WinForms.Guna2TextBox TextBoxSearchProviders_SAS;
+        private Guna.UI2.WinForms.Guna2CheckBox CheckBoxSearchDepartments_SAS;
+        private Guna.UI2.WinForms.Guna2DataGridView DataGridViewDepartments_SAS;
     }
 }
 

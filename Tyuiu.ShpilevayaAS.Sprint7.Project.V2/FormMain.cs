@@ -17,8 +17,46 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
         {
             InitializeComponent();
         }
+        DataService ds = new DataService();
+        string pathDepartments = @"C:\Users\katri\source\repos\Tyuiu.ShpilevayaAS.Sprint7\Tyuiu.ShpilevayaAS.Sprint7.Project.V2\bin\Debug\Departments.csv";
+        
         private void FormMain_Load(object sender, EventArgs e)
         {
+           try
+            {
+                string[,] DataDepartments = ds.GetDataFromFile(pathDepartments);
+
+                int rows = 86;
+                int columns = 5;
+
+                DataGridViewDepartments_SAS.RowCount = rows;
+                DataGridViewDepartments_SAS.ColumnCount = columns;
+
+                DataGridViewDepartments_SAS.Columns[0].HeaderText = "Номер филиала";
+                DataGridViewDepartments_SAS.Columns[1].HeaderText = "Город";
+                DataGridViewDepartments_SAS.Columns[2].HeaderText = "Улица";
+                DataGridViewDepartments_SAS.Columns[3].HeaderText = "Номер здания";
+                DataGridViewDepartments_SAS.Columns[4].HeaderText = "Номер телефона";
+
+                for (int i = 0; i < columns; i++)
+                {
+                    DataGridViewDepartments_SAS.Columns[i].Width = 150;
+                }
+
+                for (int r = 0; r < rows; r++)
+                {
+                    for (int c = 0; c < columns; c++)
+                    {
+                        DataGridViewDepartments_SAS.Rows[r].Cells[c].Value = DataDepartments[r, c];
+                    }
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 
@@ -89,6 +127,11 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
         private void PictureBoxSearchDepartments_SAS_MouseEnter(object sender, EventArgs e)
         {
             toolTipButton_SAS.ToolTipTitle = "Поиск";
+        }
+
+        private void CheckBoxSearchDepartments_SAS_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
 
         //private void guna2CircleButton1_Click(object sender, EventArgs e)

@@ -11,7 +11,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2.Lib
     {
         public string[,] GetDataFromFile(string path)
         {
-            string fileData = File.ReadAllText(path);
+            string fileData = File.ReadAllText(path, Encoding.GetEncoding(1251));
             fileData = fileData.Replace('\n', '\r');
             string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
             int rows = lines.Length;
@@ -45,7 +45,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2.Lib
                     str = str + line[i];
                 }
             }
-            File.AppendAllText(path, str + Environment.NewLine);
+            File.AppendAllText(path, str + Environment.NewLine, Encoding.GetEncoding(1251));
             completed = true;
             return completed;
         }
