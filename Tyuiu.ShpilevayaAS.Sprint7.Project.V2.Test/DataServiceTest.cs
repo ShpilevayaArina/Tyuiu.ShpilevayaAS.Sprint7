@@ -11,7 +11,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2.Test
         [TestMethod]
         public void ValidGetDataFromFile()
         {
-            string path = @"C:\Users\katri\source\repos\Tyuiu.ShpilevayaAS.Sprint7\Tyuiu.ShpilevayaAS.Sprint7.Project.V2.Test\bin\Debug\InPutFileProjectV2.csv";
+            string path = @"C:\Users\katri\source\repos\Tyuiu.ShpilevayaAS.Sprint7\Tyuiu.ShpilevayaAS.Sprint7.Project.V2.Lib\ListOfDepartments.csv";
             FileInfo info = new FileInfo(path);
             bool res = info.Exists;
             bool wait = true;
