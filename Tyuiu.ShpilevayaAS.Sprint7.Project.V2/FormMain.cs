@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tyuiu.ShpilevayaAS.Sprint7.Project.V2.Lib;
+using System.IO;
 
 namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
 {
@@ -16,72 +17,42 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
         public FormMain()
         {
             InitializeComponent();
+            openFileDialogChooseData_SAS.Filter = "Значения, разделённые запятыми (*.csv)|*.csv|Все файлы(*.*)|*.*";
+            saveFileDialogTask_SAS.Filter = "Значения, разделённые запятыми (*.csv)|*.csv|Все файлы(*.*)|*.*";
         }
+        static int rowsDepartmens = 86;
+        static int columnsDepartmens = 4;
+        static string openFilePath;
         DataService ds = new DataService();
-        string pathDepartments = @"C:\Users\katri\source\repos\Tyuiu.ShpilevayaAS.Sprint7\Tyuiu.ShpilevayaAS.Sprint7.Project.V2\bin\Debug\Departments.csv";
-        
+
+        // задаём изначальное количество столбцов и строк в таблицах
         private void FormMain_Load(object sender, EventArgs e)
         {
-           try
-            {
-                string[,] DataDepartments = ds.GetDataFromFile(pathDepartments);
-
-                int rows = 86;
-                int columns = 5;
-
-                DataGridViewDepartments_SAS.RowCount = rows;
-                DataGridViewDepartments_SAS.ColumnCount = columns;
-
-                DataGridViewDepartments_SAS.Columns[0].HeaderText = "Номер филиала";
-                DataGridViewDepartments_SAS.Columns[1].HeaderText = "Город";
-                DataGridViewDepartments_SAS.Columns[2].HeaderText = "Улица";
-                DataGridViewDepartments_SAS.Columns[3].HeaderText = "Номер здания";
-                DataGridViewDepartments_SAS.Columns[4].HeaderText = "Номер телефона";
-
-                for (int i = 0; i < columns; i++)
-                {
-                    DataGridViewDepartments_SAS.Columns[i].Width = 150;
-                }
-
-                for (int r = 0; r < rows; r++)
-                {
-                    for (int c = 0; c < columns; c++)
-                    {
-                        DataGridViewDepartments_SAS.Rows[r].Cells[c].Value = DataDepartments[r, c];
-                    }
-                }
-
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
+            DataGridViewDepartments_SAS.ColumnCount = 4;
+            DataGridViewDepartments_SAS.RowCount = 87;
         }
 
+        // открытие других форм
         private void guna2ButtonInfo_SAS_Click(object sender, EventArgs e)
         {
             FormAbout formAbout = new FormAbout();
             formAbout.ShowDialog();
         }
-
         private void guna2ButtonHelp_SAS_Click(object sender, EventArgs e)
         {
             FormUserGuide formUserGuide = new FormUserGuide();
             formUserGuide.ShowDialog();
         }
 
+        // кнопки управления
         private void buttonClose_SAS_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         private void buttonMinimize_SAS_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
         private bool isFullscreen = false;
         private FormWindowState previousWindowState;
         private void buttonChange_SAS_Click(object sender, EventArgs e)
@@ -99,42 +70,74 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             }
         }
 
+        // заголовки тултипов
         private void guna2ButtonInfo_SAS_MouseEnter(object sender, EventArgs e)
         {
             toolTipButton_SAS.ToolTipTitle = "Справка";
         }
-
         private void guna2ButtonHelp_SAS_MouseEnter(object sender, EventArgs e)
         {
             toolTipButton_SAS.ToolTipTitle = "Краткое руководство пользователя";
         }
-
-        private void TextBoxSearchDepartments_SAS_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PictureBoxSearch_SAS_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPageEmployees_SAS_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PictureBoxSearchDepartments_SAS_MouseEnter(object sender, EventArgs e)
+        private void ButtonSearchDepartments_SAS_MouseEnter(object sender, EventArgs e)
         {
             toolTipButton_SAS.ToolTipTitle = "Поиск";
         }
 
-        private void CheckBoxSearchDepartments_SAS_CheckedChanged(object sender, EventArgs e)
+        // добавление базы данных филиалов и дизайн таблицы
+        private void ButtonOpenDepartments_SAS_Click(object sender, EventArgs e)
         {
+            openFileDialogChooseData_SAS.ShowDialog();
+            openFilePath = openFileDialogChooseData_SAS.FileName;
+            //TextBoxSearchDepartments_SAS.Enabled = true;
+            try
+            {
+                Font newFont = new Font("Segoe UI", 10, FontStyle.Bold);
+                DataGridViewDepartments_SAS.DefaultCellStyle.Font = newFont;
+                string[,] MatrixDepartmens = ds.LoadDataFromFile(openFilePath);
 
+
+                DataGridViewDepartments_SAS.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(118, 65, 210);
+                DataGridViewDepartments_SAS.ColumnHeadersDefaultCellStyle.ForeColor = Color.FromArgb(45, 47, 59);
+
+                DataGridViewDepartments_SAS.Columns[0].DefaultCellStyle.BackColor = Color.FromArgb(204, 187, 231);
+                DataGridViewDepartments_SAS.Columns[1].DefaultCellStyle.BackColor = Color.FromArgb(204, 187, 231);
+                DataGridViewDepartments_SAS.Columns[2].DefaultCellStyle.BackColor = Color.FromArgb(204, 187, 231);
+                DataGridViewDepartments_SAS.Columns[3].DefaultCellStyle.BackColor = Color.FromArgb(204, 187, 231);
+                DataGridViewDepartments_SAS.DefaultCellStyle.ForeColor = Color.Black;
+
+                DataGridViewDepartments_SAS.Columns[0].Width = 5;
+                DataGridViewDepartments_SAS.Columns[0].HeaderText = "№";
+
+                DataGridViewDepartments_SAS.Columns[1].Width = 15;
+                DataGridViewDepartments_SAS.Columns[1].HeaderText = "Город";
+
+                DataGridViewDepartments_SAS.Columns[2].Width = 15;
+                DataGridViewDepartments_SAS.Columns[2].HeaderText = "Адрес";
+
+                DataGridViewDepartments_SAS.Columns[3].Width = 90;
+                DataGridViewDepartments_SAS.Columns[3].HeaderText = "Телефон";
+
+                for (int r = 0; r < rowsDepartmens; r++)
+                {
+                    for (int c = 0; c < columnsDepartmens; c++)
+                    {
+                        DataGridViewDepartments_SAS.Rows[r + 1].Cells[c].Value = MatrixDepartmens[r, c];
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        //private void guna2CircleButton1_Click(object sender, EventArgs e)
-        //{    this.Close();}
+        // осуществляем поиск по таблице филиалов
+        private void ButtonSearchDepartments_SAS_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        
     }
 }

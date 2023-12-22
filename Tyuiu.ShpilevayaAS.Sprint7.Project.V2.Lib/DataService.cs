@@ -11,23 +11,24 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2.Lib
     {
         public string[,] LoadDataFromFile(string path)
         {
-            string[] str = File.ReadAllLines(path);
+            string fileData = File.ReadAllText(path, Encoding.GetEncoding(1251));
+            fileData = fileData.Replace('\n', '\r');
+            string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
 
-            int columns = str[0].Split(';').Length;
-            int rows = str.Length;
+            int rows = lines.Length;
+            int columns = lines[0].Split(';').Length;
 
-            string[,] matrix = new string[rows, columns];
+            string[,] arrayValues = new string[rows, columns];
 
-            for (int i = 0; i < str.Length; i++)
+            for (int r = 0; r < rows; r++)
             {
-                string strIndexI = str[i];
-                string[] strArr = strIndexI.Split(';');
-                for (int c = 0; c < strArr.Length; c++)
+                string[] line_r = lines[r].Split(';');
+                for (int c = 0; c < columns; c++)
                 {
-                    matrix[i, c] = strArr[c];
+                    arrayValues[r, c] = line_r[c];
                 }
             }
-            return matrix;
+            return arrayValues;
         }
     }
 }

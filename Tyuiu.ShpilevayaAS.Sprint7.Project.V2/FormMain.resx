@@ -199,6 +199,9 @@
         gwGM/QGBjjOCsRGsu46eP2rWYm8ZKxUgQ9007X8DvaQP073GdAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="toolTipButton_SAS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>208, 17</value>
+  </metadata>
   <data name="guna2ButtonHelp_SAS.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAARUAAAEOCAYAAACn/4O6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
@@ -344,9 +347,6 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="toolTipButton_SAS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>208, 17</value>
-  </metadata>
   <data name="guna2ButtonInfo_SAS.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAARUAAAEOCAYAAACn/4O6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
@@ -479,22 +479,7 @@
         YII=
 </value>
   </data>
-  <data name="TextBoxMainMenu_SAS.DefaultText" xml:space="preserve">
-    <value>	Добро пожаловать в корпоративное приложение сети магазинов!
-
-	Мы рады приветствовать вас в нашем приложении, которое предоставляет доступ к информации о нашей сети магазинов. В нашу сеть входит 86 филиалов, которые расположены в 20 городах России. Каждый филиал имеет свой уникальный адрес, и мы уверены, что вы легко найдете интересующую вас информацию.
-
-	В нашей сети магазинов работает множество талантливых руководителей, которые обеспечивают эффективное управление каждым филиалом. Мы предоставляем вам возможность узнать информацию обо всех наших руководителях, включая их имена, контактные данные и другую информацию. Вы сможете легко связаться с ними, если у вас возникнут вопросы или потребуется помощь.
-
-	Кроме того, мы сотрудничаем с более чем 100 поставщиками, которые обеспечивают нам качественные товары и услуги. В нашем приложении вы сможете получить информацию о каждом из них, включая контактные данные и другие детали. Это поможет вам легко связаться с поставщиками и установить взаимовыгодное сотрудничество.
-
-	Мы постарались создать удобное и информативное приложение, чтобы вы могли легко получить доступ ко всей необходимой информации о нашей сети магазинов. Используйте навигационные вкладки в левой панели приложения, чтобы легко перемещаться между разделами и находить нужную информацию.
-
-	Если у вас возникнут вопросы или затруднения при использовании приложения, не стесняйтесь обратиться к нашей службе поддержки. Мы всегда готовы помочь вам.
-
-	Спасибо, что выбрали наше корпоративное приложение сети магазинов. Желаем вам приятной работы и успешного использования всех его возможностей!</value>
-  </data>
-  <data name="PictureBoxSearchDepartments_SAS.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ButtonSearchDepartments_SAS.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EwAACxMBAJqcGAAAAz1JREFUWEftVkloFEEUHRdERXAXN0QRBVdQPOSQTHV1FnBDI8STy0VBorhEcxA0
@@ -514,7 +499,10 @@
         ifwEwSH0qZ65ouMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="PictureBoxSearchEmpoyees_SAS.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <metadata name="toolTipButton_SAS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>208, 17</value>
+  </metadata>
+  <data name="ButtonSearchEmpoyees_SAS.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EwAACxMBAJqcGAAAAz1JREFUWEftVkloFEEUHRdERXAXN0QRBVdQPOSQTHV1FnBDI8STy0VBorhEcxA0
@@ -534,7 +522,7 @@
         ifwEwSH0qZ65ouMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="PictureBoxSearchProviders_SAS.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ButtonSearchProviders_SAS.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EwAACxMBAJqcGAAAAz1JREFUWEftVkloFEEUHRdERXAXN0QRBVdQPOSQTHV1FnBDI8STy0VBorhEcxA0
@@ -752,4 +740,25 @@
         gRmRSCQSicrVbrv9f0p7QrY35dxRAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="TextBoxMainMenu_SAS.DefaultText" xml:space="preserve">
+    <value>	Добро пожаловать в корпоративное приложение сети магазинов!
+
+	Мы рады приветствовать вас в нашем приложении, которое предоставляет доступ к информации о нашей сети магазинов. В нашу сеть входит 86 филиалов, которые расположены в 20 городах России. Каждый филиал имеет свой уникальный адрес, и мы уверены, что вы легко найдете интересующую вас информацию.
+
+	В нашей сети магазинов работает множество талантливых руководителей, которые обеспечивают эффективное управление каждым филиалом. Мы предоставляем вам возможность узнать информацию обо всех наших руководителях, включая их имена, контактные данные и другую информацию. Вы сможете легко связаться с ними, если у вас возникнут вопросы или потребуется помощь.
+
+	Кроме того, мы сотрудничаем с более чем 100 поставщиками, которые обеспечивают нам качественные товары и услуги. В нашем приложении вы сможете получить информацию о каждом из них, включая контактные данные и другие детали. Это поможет вам легко связаться с поставщиками и установить взаимовыгодное сотрудничество.
+
+	Мы постарались создать удобное и информативное приложение, чтобы вы могли легко получить доступ ко всей необходимой информации о нашей сети магазинов. Используйте навигационные вкладки в левой панели приложения, чтобы легко перемещаться между разделами и находить нужную информацию.
+
+	Если у вас возникнут вопросы или затруднения при использовании приложения, не стесняйтесь обратиться к нашей службе поддержки. Мы всегда готовы помочь вам.
+
+	Спасибо, что выбрали наше корпоративное приложение сети магазинов. Желаем вам приятной работы и успешного использования всех его возможностей!</value>
+  </data>
+  <metadata name="openFileDialogChooseData_SAS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>391, 17</value>
+  </metadata>
+  <metadata name="saveFileDialogTask_SAS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>666, 17</value>
+  </metadata>
 </root>
