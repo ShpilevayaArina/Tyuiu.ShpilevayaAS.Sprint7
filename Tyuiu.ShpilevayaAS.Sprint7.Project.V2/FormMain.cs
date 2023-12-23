@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tyuiu.ShpilevayaAS.Sprint7.Project.V2.Lib;
 using System.IO;
+using FontAwesome.Sharp;
 
 namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
 {
@@ -21,15 +22,15 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             saveFileDialogTask_SAS.Filter = "Значения, разделённые запятыми (*.csv)|*.csv|Все файлы(*.*)|*.*";
         }
         static int rowsDepartmens = 86;
-        static int columnsDepartmens = 4;
+        static int columnsDepartmens = 5;
         static string openFilePath;
         DataService ds = new DataService();
 
         // задаём изначальное количество столбцов и строк в таблицах
         private void FormMain_Load(object sender, EventArgs e)
         {
-            DataGridViewDepartments_SAS.ColumnCount = 4;
-            DataGridViewDepartments_SAS.RowCount = 87;
+            DataGridViewDepartments_SAS.ColumnCount = 5;
+            DataGridViewDepartments_SAS.RowCount = 88;
         }
 
         // открытие других форм
@@ -83,9 +84,33 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
         {
             toolTipButton_SAS.ToolTipTitle = "Поиск";
         }
+        private void iconButtonOpenFile_SAS_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipButton_SAS.ToolTipTitle = "Открыть файл";
+        }
+        private void iconButtonSave_SAS_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipButton_SAS.ToolTipTitle = "Сохранить файл";
+        }
+
+        // осуществляем поиск по таблице филиалов
+        private void ButtonSearchDepartments_SAS_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < DataGridViewDepartments_SAS.RowCount; i++)
+            {
+                DataGridViewDepartments_SAS.Rows[i].Selected = false;
+                for (int j = 0; j < DataGridViewDepartments_SAS.ColumnCount; j++)
+                    if (DataGridViewDepartments_SAS.Rows[i].Cells[j].Value != null)
+                        if (DataGridViewDepartments_SAS.Rows[i].Cells[j].Value.ToString().Contains(TextBoxSearchDepartments_SAS.Text))
+                        {
+                            DataGridViewDepartments_SAS.Rows[i].Selected = true;
+                            break;
+                        }
+            }
+        }
 
         // добавление базы данных филиалов и дизайн таблицы
-        private void ButtonOpenDepartments_SAS_Click(object sender, EventArgs e)
+        private void iconButtonOpenFile_SAS_Click(object sender, EventArgs e)
         {
             openFileDialogChooseData_SAS.ShowDialog();
             openFilePath = openFileDialogChooseData_SAS.FileName;
@@ -104,6 +129,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
                 DataGridViewDepartments_SAS.Columns[1].DefaultCellStyle.BackColor = Color.FromArgb(204, 187, 231);
                 DataGridViewDepartments_SAS.Columns[2].DefaultCellStyle.BackColor = Color.FromArgb(204, 187, 231);
                 DataGridViewDepartments_SAS.Columns[3].DefaultCellStyle.BackColor = Color.FromArgb(204, 187, 231);
+                DataGridViewDepartments_SAS.Columns[4].DefaultCellStyle.BackColor = Color.FromArgb(204, 187, 231);
                 DataGridViewDepartments_SAS.DefaultCellStyle.ForeColor = Color.Black;
 
                 DataGridViewDepartments_SAS.Columns[0].Width = 5;
@@ -115,8 +141,11 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
                 DataGridViewDepartments_SAS.Columns[2].Width = 15;
                 DataGridViewDepartments_SAS.Columns[2].HeaderText = "Адрес";
 
-                DataGridViewDepartments_SAS.Columns[3].Width = 90;
+                DataGridViewDepartments_SAS.Columns[3].Width = 15;
                 DataGridViewDepartments_SAS.Columns[3].HeaderText = "Телефон";
+
+                DataGridViewDepartments_SAS.Columns[4].Width = 20;
+                DataGridViewDepartments_SAS.Columns[4].HeaderText = "Год открытия филиала";
 
                 for (int r = 0; r < rowsDepartmens; r++)
                 {
@@ -132,12 +161,42 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             }
         }
 
-        // осуществляем поиск по таблице филиалов
-        private void ButtonSearchDepartments_SAS_Click(object sender, EventArgs e)
+        // добавление информации и сохранение нового файла
+        private void iconButtonSave_SAS_Click(object sender, EventArgs e)
         {
-            
-        }
+            try
+            {
+                saveFileDialogTask_SAS.FileName = "NewDepartments.csv";
+                saveFileDialogTask_SAS.InitialDirectory = @":C";
+                if (saveFileDialogTask_SAS.ShowDialog() == DialogResult.OK)
+                {
+                    string savepath = saveFileDialogTask_SAS.FileName;
 
-        
+                    if (File.Exists(savepath)) File.Delete(savepath);
+
+                    int rows = DataGridViewDepartments_SAS.RowCount;
+                    int columns = DataGridViewDepartments_SAS.ColumnCount;
+
+                    StringBuilder strBuilder = new StringBuilder();
+
+                    for (int i = 0; i < rows; i++)
+                    {
+                        for (int j = 0; j < columns; j++)
+                        {
+                            strBuilder.Append(DataGridViewDepartments_SAS.Rows[i].Cells[j].Value);
+
+                            if (j != columns - 1) strBuilder.Append(",");
+                        }
+                        strBuilder.AppendLine();
+                    }
+                    File.WriteAllText(savepath, strBuilder.ToString(), Encoding.GetEncoding(1251));
+                    MessageBox.Show("Файл сохранен", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Файл не сохранен", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

@@ -69,7 +69,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(585, 223);
+            this.ClientSize = new System.Drawing.Size(598, 226);
             this.Controls.Add(this.buttonClose_SAS);
             this.Controls.Add(this.pictureBoxAvatar_SAS);
             this.Controls.Add(this.labelInfo_SAS);
