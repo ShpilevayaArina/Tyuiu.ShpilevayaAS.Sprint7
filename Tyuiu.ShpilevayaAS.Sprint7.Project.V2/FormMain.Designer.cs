@@ -33,6 +33,12 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.BorderlessForm_SAS = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.pictureBoxLogo_SAS = new System.Windows.Forms.PictureBox();
@@ -41,18 +47,28 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageMainMenu_SAS = new System.Windows.Forms.TabPage();
             this.TextBoxMainMenu_SAS = new Guna.UI2.WinForms.Guna2TextBox();
             this.tabPageDepartments_SAS = new System.Windows.Forms.TabPage();
+            this.iconButtonStatistic_SAS = new FontAwesome.Sharp.IconButton();
             this.iconButtonSave_SAS = new FontAwesome.Sharp.IconButton();
             this.iconButtonOpenFile_SAS = new FontAwesome.Sharp.IconButton();
             this.ButtonSearchDepartments_SAS = new Guna.UI2.WinForms.Guna2Button();
             this.TextBoxSearchDepartments_SAS = new Guna.UI2.WinForms.Guna2TextBox();
             this.DataGridViewDepartments_SAS = new Guna.UI2.WinForms.Guna2DataGridView();
             this.tabPageEmployees_SAS = new System.Windows.Forms.TabPage();
+            this.TextBoxMinEmployees_SAS = new Guna.UI2.WinForms.Guna2TextBox();
+            this.iconButtonMaxEmployees_SAS = new FontAwesome.Sharp.IconButton();
+            this.iconButtonMinEmployees_SAS = new FontAwesome.Sharp.IconButton();
+            this.iconButtonSaveFileEmployees_SAS = new FontAwesome.Sharp.IconButton();
+            this.iconButtonOpenFileEmployees_SAS = new FontAwesome.Sharp.IconButton();
+            this.DataGridViewEmployees_SAS = new Guna.UI2.WinForms.Guna2DataGridView();
             this.ButtonSearchEmpoyees_SAS = new Guna.UI2.WinForms.Guna2Button();
-            this.ButtonOpenEmployees_SAS = new Guna.UI2.WinForms.Guna2Button();
             this.TextBoxSearchEmpoyees_SAS = new Guna.UI2.WinForms.Guna2TextBox();
             this.tabPageProviders_SAS = new System.Windows.Forms.TabPage();
+            this.iconButtonMax_SAS = new FontAwesome.Sharp.IconButton();
+            this.iconButtonMin_SAS = new FontAwesome.Sharp.IconButton();
+            this.iconButtonSaveFileProviders_SAS = new FontAwesome.Sharp.IconButton();
+            this.iconButtonOpenFileProviders_SAS = new FontAwesome.Sharp.IconButton();
+            this.DataGridViewProviders_SAS = new Guna.UI2.WinForms.Guna2DataGridView();
             this.ButtonSearchProviders_SAS = new Guna.UI2.WinForms.Guna2Button();
-            this.ButtonOpenProviders_SAS = new Guna.UI2.WinForms.Guna2Button();
             this.TextBoxSearchProviders_SAS = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ButtonInfo_SAS = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ButtonHelp_SAS = new Guna.UI2.WinForms.Guna2Button();
@@ -62,13 +78,18 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.toolTipButton_SAS = new System.Windows.Forms.ToolTip(this.components);
             this.openFileDialogChooseData_SAS = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialogTask_SAS = new System.Windows.Forms.SaveFileDialog();
+            this.TextBoxMaxEmployees_SAS = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TextBoxMaxProviders_SAS = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TextBoxMinProviders_SAS = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo_SAS)).BeginInit();
             this.tabListOfSections_SAS.SuspendLayout();
             this.tabPageMainMenu_SAS.SuspendLayout();
             this.tabPageDepartments_SAS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewDepartments_SAS)).BeginInit();
             this.tabPageEmployees_SAS.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewEmployees_SAS)).BeginInit();
             this.tabPageProviders_SAS.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewProviders_SAS)).BeginInit();
             this.SuspendLayout();
             // 
             // BorderlessForm_SAS
@@ -178,6 +199,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             // tabPageDepartments_SAS
             // 
             this.tabPageDepartments_SAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.tabPageDepartments_SAS.Controls.Add(this.iconButtonStatistic_SAS);
             this.tabPageDepartments_SAS.Controls.Add(this.iconButtonSave_SAS);
             this.tabPageDepartments_SAS.Controls.Add(this.iconButtonOpenFile_SAS);
             this.tabPageDepartments_SAS.Controls.Add(this.ButtonSearchDepartments_SAS);
@@ -189,6 +211,22 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageDepartments_SAS.Size = new System.Drawing.Size(969, 613);
             this.tabPageDepartments_SAS.TabIndex = 1;
             this.tabPageDepartments_SAS.Text = "Филиалы";
+            // 
+            // iconButtonStatistic_SAS
+            // 
+            this.iconButtonStatistic_SAS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonStatistic_SAS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.iconButtonStatistic_SAS.IconChar = FontAwesome.Sharp.IconChar.ChartArea;
+            this.iconButtonStatistic_SAS.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.iconButtonStatistic_SAS.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonStatistic_SAS.Location = new System.Drawing.Point(559, 7);
+            this.iconButtonStatistic_SAS.Name = "iconButtonStatistic_SAS";
+            this.iconButtonStatistic_SAS.Size = new System.Drawing.Size(44, 49);
+            this.iconButtonStatistic_SAS.TabIndex = 9;
+            this.toolTipButton_SAS.SetToolTip(this.iconButtonStatistic_SAS, "Посмотреть график роста количества открытых филиалов");
+            this.iconButtonStatistic_SAS.UseVisualStyleBackColor = true;
+            this.iconButtonStatistic_SAS.Click += new System.EventHandler(this.iconButtonStatistic_SAS_Click);
+            this.iconButtonStatistic_SAS.MouseEnter += new System.EventHandler(this.iconButtonStatistic_SAS_MouseEnter);
             // 
             // iconButtonSave_SAS
             // 
@@ -325,8 +363,14 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             // tabPageEmployees_SAS
             // 
             this.tabPageEmployees_SAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.tabPageEmployees_SAS.Controls.Add(this.TextBoxMaxEmployees_SAS);
+            this.tabPageEmployees_SAS.Controls.Add(this.TextBoxMinEmployees_SAS);
+            this.tabPageEmployees_SAS.Controls.Add(this.iconButtonMaxEmployees_SAS);
+            this.tabPageEmployees_SAS.Controls.Add(this.iconButtonMinEmployees_SAS);
+            this.tabPageEmployees_SAS.Controls.Add(this.iconButtonSaveFileEmployees_SAS);
+            this.tabPageEmployees_SAS.Controls.Add(this.iconButtonOpenFileEmployees_SAS);
+            this.tabPageEmployees_SAS.Controls.Add(this.DataGridViewEmployees_SAS);
             this.tabPageEmployees_SAS.Controls.Add(this.ButtonSearchEmpoyees_SAS);
-            this.tabPageEmployees_SAS.Controls.Add(this.ButtonOpenEmployees_SAS);
             this.tabPageEmployees_SAS.Controls.Add(this.TextBoxSearchEmpoyees_SAS);
             this.tabPageEmployees_SAS.Location = new System.Drawing.Point(184, 4);
             this.tabPageEmployees_SAS.Name = "tabPageEmployees_SAS";
@@ -334,6 +378,152 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageEmployees_SAS.Size = new System.Drawing.Size(969, 613);
             this.tabPageEmployees_SAS.TabIndex = 2;
             this.tabPageEmployees_SAS.Text = "Сотрудники";
+            // 
+            // TextBoxMinEmployees_SAS
+            // 
+            this.TextBoxMinEmployees_SAS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMinEmployees_SAS.BorderRadius = 10;
+            this.TextBoxMinEmployees_SAS.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxMinEmployees_SAS.DefaultText = "";
+            this.TextBoxMinEmployees_SAS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxMinEmployees_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxMinEmployees_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxMinEmployees_SAS.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxMinEmployees_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMinEmployees_SAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxMinEmployees_SAS.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextBoxMinEmployees_SAS.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxMinEmployees_SAS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxMinEmployees_SAS.Location = new System.Drawing.Point(167, 63);
+            this.TextBoxMinEmployees_SAS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TextBoxMinEmployees_SAS.Name = "TextBoxMinEmployees_SAS";
+            this.TextBoxMinEmployees_SAS.PasswordChar = '\0';
+            this.TextBoxMinEmployees_SAS.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMinEmployees_SAS.PlaceholderText = "";
+            this.TextBoxMinEmployees_SAS.ReadOnly = true;
+            this.TextBoxMinEmployees_SAS.SelectedText = "";
+            this.TextBoxMinEmployees_SAS.Size = new System.Drawing.Size(187, 48);
+            this.TextBoxMinEmployees_SAS.TabIndex = 15;
+            // 
+            // iconButtonMaxEmployees_SAS
+            // 
+            this.iconButtonMaxEmployees_SAS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonMaxEmployees_SAS.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.iconButtonMaxEmployees_SAS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.iconButtonMaxEmployees_SAS.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButtonMaxEmployees_SAS.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.iconButtonMaxEmployees_SAS.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonMaxEmployees_SAS.Location = new System.Drawing.Point(380, 62);
+            this.iconButtonMaxEmployees_SAS.Name = "iconButtonMaxEmployees_SAS";
+            this.iconButtonMaxEmployees_SAS.Size = new System.Drawing.Size(94, 42);
+            this.iconButtonMaxEmployees_SAS.TabIndex = 13;
+            this.iconButtonMaxEmployees_SAS.Text = "max";
+            this.iconButtonMaxEmployees_SAS.UseVisualStyleBackColor = true;
+            this.iconButtonMaxEmployees_SAS.Click += new System.EventHandler(this.iconButtonMaxEmployees_SAS_Click);
+            // 
+            // iconButtonMinEmployees_SAS
+            // 
+            this.iconButtonMinEmployees_SAS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonMinEmployees_SAS.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.iconButtonMinEmployees_SAS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.iconButtonMinEmployees_SAS.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButtonMinEmployees_SAS.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.iconButtonMinEmployees_SAS.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonMinEmployees_SAS.Location = new System.Drawing.Point(67, 63);
+            this.iconButtonMinEmployees_SAS.Name = "iconButtonMinEmployees_SAS";
+            this.iconButtonMinEmployees_SAS.Size = new System.Drawing.Size(94, 42);
+            this.iconButtonMinEmployees_SAS.TabIndex = 14;
+            this.iconButtonMinEmployees_SAS.Text = "min";
+            this.iconButtonMinEmployees_SAS.UseVisualStyleBackColor = true;
+            this.iconButtonMinEmployees_SAS.Click += new System.EventHandler(this.iconButtonMinEmployees_SAS_Click);
+            // 
+            // iconButtonSaveFileEmployees_SAS
+            // 
+            this.iconButtonSaveFileEmployees_SAS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonSaveFileEmployees_SAS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.iconButtonSaveFileEmployees_SAS.IconChar = FontAwesome.Sharp.IconChar.FolderClosed;
+            this.iconButtonSaveFileEmployees_SAS.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.iconButtonSaveFileEmployees_SAS.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonSaveFileEmployees_SAS.Location = new System.Drawing.Point(500, 7);
+            this.iconButtonSaveFileEmployees_SAS.Name = "iconButtonSaveFileEmployees_SAS";
+            this.iconButtonSaveFileEmployees_SAS.Size = new System.Drawing.Size(44, 49);
+            this.iconButtonSaveFileEmployees_SAS.TabIndex = 11;
+            this.toolTipButton_SAS.SetToolTip(this.iconButtonSaveFileEmployees_SAS, "Сохранить файл с новыми данными");
+            this.iconButtonSaveFileEmployees_SAS.UseVisualStyleBackColor = true;
+            this.iconButtonSaveFileEmployees_SAS.Click += new System.EventHandler(this.iconButtonSaveFileEmployees_SAS_Click);
+            this.iconButtonSaveFileEmployees_SAS.MouseEnter += new System.EventHandler(this.iconButtonSave_SAS_MouseEnter);
+            // 
+            // iconButtonOpenFileEmployees_SAS
+            // 
+            this.iconButtonOpenFileEmployees_SAS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonOpenFileEmployees_SAS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.iconButtonOpenFileEmployees_SAS.IconChar = FontAwesome.Sharp.IconChar.FolderOpen;
+            this.iconButtonOpenFileEmployees_SAS.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.iconButtonOpenFileEmployees_SAS.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonOpenFileEmployees_SAS.Location = new System.Drawing.Point(438, 7);
+            this.iconButtonOpenFileEmployees_SAS.Name = "iconButtonOpenFileEmployees_SAS";
+            this.iconButtonOpenFileEmployees_SAS.Size = new System.Drawing.Size(45, 47);
+            this.iconButtonOpenFileEmployees_SAS.TabIndex = 10;
+            this.toolTipButton_SAS.SetToolTip(this.iconButtonOpenFileEmployees_SAS, "Выбрать файл для открытия");
+            this.iconButtonOpenFileEmployees_SAS.UseVisualStyleBackColor = true;
+            this.iconButtonOpenFileEmployees_SAS.Click += new System.EventHandler(this.iconButtonOpenFileEmployees_SAS_Click);
+            this.iconButtonOpenFileEmployees_SAS.MouseEnter += new System.EventHandler(this.iconButtonOpenFile_SAS_MouseEnter);
+            // 
+            // DataGridViewEmployees_SAS
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.DataGridViewEmployees_SAS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.DataGridViewEmployees_SAS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DataGridViewEmployees_SAS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridViewEmployees_SAS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.DataGridViewEmployees_SAS.ColumnHeadersHeight = 35;
+            this.DataGridViewEmployees_SAS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewEmployees_SAS.DefaultCellStyle = dataGridViewCellStyle6;
+            this.DataGridViewEmployees_SAS.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.DataGridViewEmployees_SAS.Location = new System.Drawing.Point(17, 129);
+            this.DataGridViewEmployees_SAS.Name = "DataGridViewEmployees_SAS";
+            this.DataGridViewEmployees_SAS.RowHeadersVisible = false;
+            this.DataGridViewEmployees_SAS.RowHeadersWidth = 51;
+            this.DataGridViewEmployees_SAS.RowTemplate.Height = 24;
+            this.DataGridViewEmployees_SAS.Size = new System.Drawing.Size(928, 464);
+            this.DataGridViewEmployees_SAS.TabIndex = 9;
+            this.DataGridViewEmployees_SAS.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.DataGridViewEmployees_SAS.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.DataGridViewEmployees_SAS.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.DataGridViewEmployees_SAS.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.DataGridViewEmployees_SAS.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.DataGridViewEmployees_SAS.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.DataGridViewEmployees_SAS.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.DataGridViewEmployees_SAS.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.DataGridViewEmployees_SAS.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridViewEmployees_SAS.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.DataGridViewEmployees_SAS.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.DataGridViewEmployees_SAS.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.DataGridViewEmployees_SAS.ThemeStyle.HeaderStyle.Height = 35;
+            this.DataGridViewEmployees_SAS.ThemeStyle.ReadOnly = false;
+            this.DataGridViewEmployees_SAS.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.DataGridViewEmployees_SAS.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DataGridViewEmployees_SAS.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.DataGridViewEmployees_SAS.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.DataGridViewEmployees_SAS.ThemeStyle.RowsStyle.Height = 24;
+            this.DataGridViewEmployees_SAS.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.DataGridViewEmployees_SAS.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
             // 
             // ButtonSearchEmpoyees_SAS
             // 
@@ -351,23 +541,8 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.ButtonSearchEmpoyees_SAS.Size = new System.Drawing.Size(57, 45);
             this.ButtonSearchEmpoyees_SAS.TabIndex = 7;
             this.toolTipButton_SAS.SetToolTip(this.ButtonSearchEmpoyees_SAS, "Найти сотрудника по ФИО\r\n");
+            this.ButtonSearchEmpoyees_SAS.Click += new System.EventHandler(this.ButtonSearchEmpoyees_SAS_Click);
             this.ButtonSearchEmpoyees_SAS.MouseEnter += new System.EventHandler(this.ButtonSearchDepartments_SAS_MouseEnter);
-            // 
-            // ButtonOpenEmployees_SAS
-            // 
-            this.ButtonOpenEmployees_SAS.BorderRadius = 10;
-            this.ButtonOpenEmployees_SAS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.ButtonOpenEmployees_SAS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.ButtonOpenEmployees_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ButtonOpenEmployees_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ButtonOpenEmployees_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
-            this.ButtonOpenEmployees_SAS.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.ButtonOpenEmployees_SAS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.ButtonOpenEmployees_SAS.Location = new System.Drawing.Point(452, 7);
-            this.ButtonOpenEmployees_SAS.Name = "ButtonOpenEmployees_SAS";
-            this.ButtonOpenEmployees_SAS.Size = new System.Drawing.Size(170, 43);
-            this.ButtonOpenEmployees_SAS.TabIndex = 6;
-            this.ButtonOpenEmployees_SAS.Text = "Открыть файл";
             // 
             // TextBoxSearchEmpoyees_SAS
             // 
@@ -397,8 +572,14 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             // tabPageProviders_SAS
             // 
             this.tabPageProviders_SAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.tabPageProviders_SAS.Controls.Add(this.TextBoxMinProviders_SAS);
+            this.tabPageProviders_SAS.Controls.Add(this.TextBoxMaxProviders_SAS);
+            this.tabPageProviders_SAS.Controls.Add(this.iconButtonMax_SAS);
+            this.tabPageProviders_SAS.Controls.Add(this.iconButtonMin_SAS);
+            this.tabPageProviders_SAS.Controls.Add(this.iconButtonSaveFileProviders_SAS);
+            this.tabPageProviders_SAS.Controls.Add(this.iconButtonOpenFileProviders_SAS);
+            this.tabPageProviders_SAS.Controls.Add(this.DataGridViewProviders_SAS);
             this.tabPageProviders_SAS.Controls.Add(this.ButtonSearchProviders_SAS);
-            this.tabPageProviders_SAS.Controls.Add(this.ButtonOpenProviders_SAS);
             this.tabPageProviders_SAS.Controls.Add(this.TextBoxSearchProviders_SAS);
             this.tabPageProviders_SAS.Location = new System.Drawing.Point(184, 4);
             this.tabPageProviders_SAS.Name = "tabPageProviders_SAS";
@@ -406,6 +587,126 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageProviders_SAS.Size = new System.Drawing.Size(969, 613);
             this.tabPageProviders_SAS.TabIndex = 3;
             this.tabPageProviders_SAS.Text = "Поставщики";
+            // 
+            // iconButtonMax_SAS
+            // 
+            this.iconButtonMax_SAS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonMax_SAS.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.iconButtonMax_SAS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.iconButtonMax_SAS.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButtonMax_SAS.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.iconButtonMax_SAS.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonMax_SAS.Location = new System.Drawing.Point(386, 62);
+            this.iconButtonMax_SAS.Name = "iconButtonMax_SAS";
+            this.iconButtonMax_SAS.Size = new System.Drawing.Size(94, 42);
+            this.iconButtonMax_SAS.TabIndex = 12;
+            this.iconButtonMax_SAS.Text = "max";
+            this.iconButtonMax_SAS.UseVisualStyleBackColor = true;
+            this.iconButtonMax_SAS.Click += new System.EventHandler(this.iconButtonMax_SAS_Click);
+            // 
+            // iconButtonMin_SAS
+            // 
+            this.iconButtonMin_SAS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonMin_SAS.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.iconButtonMin_SAS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.iconButtonMin_SAS.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButtonMin_SAS.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.iconButtonMin_SAS.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonMin_SAS.Location = new System.Drawing.Point(73, 63);
+            this.iconButtonMin_SAS.Name = "iconButtonMin_SAS";
+            this.iconButtonMin_SAS.Size = new System.Drawing.Size(94, 42);
+            this.iconButtonMin_SAS.TabIndex = 12;
+            this.iconButtonMin_SAS.Text = "min";
+            this.iconButtonMin_SAS.UseVisualStyleBackColor = true;
+            this.iconButtonMin_SAS.Click += new System.EventHandler(this.iconButtonMin_SAS_Click);
+            // 
+            // iconButtonSaveFileProviders_SAS
+            // 
+            this.iconButtonSaveFileProviders_SAS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonSaveFileProviders_SAS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.iconButtonSaveFileProviders_SAS.IconChar = FontAwesome.Sharp.IconChar.FolderClosed;
+            this.iconButtonSaveFileProviders_SAS.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.iconButtonSaveFileProviders_SAS.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonSaveFileProviders_SAS.Location = new System.Drawing.Point(502, 7);
+            this.iconButtonSaveFileProviders_SAS.Name = "iconButtonSaveFileProviders_SAS";
+            this.iconButtonSaveFileProviders_SAS.Size = new System.Drawing.Size(44, 49);
+            this.iconButtonSaveFileProviders_SAS.TabIndex = 11;
+            this.toolTipButton_SAS.SetToolTip(this.iconButtonSaveFileProviders_SAS, "Сохранить файл с новыми данными");
+            this.iconButtonSaveFileProviders_SAS.UseVisualStyleBackColor = true;
+            this.iconButtonSaveFileProviders_SAS.Click += new System.EventHandler(this.iconButtonSaveFileProviders_SAS_Click);
+            this.iconButtonSaveFileProviders_SAS.MouseEnter += new System.EventHandler(this.iconButtonSave_SAS_MouseEnter);
+            // 
+            // iconButtonOpenFileProviders_SAS
+            // 
+            this.iconButtonOpenFileProviders_SAS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonOpenFileProviders_SAS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.iconButtonOpenFileProviders_SAS.IconChar = FontAwesome.Sharp.IconChar.FolderOpen;
+            this.iconButtonOpenFileProviders_SAS.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.iconButtonOpenFileProviders_SAS.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonOpenFileProviders_SAS.Location = new System.Drawing.Point(440, 7);
+            this.iconButtonOpenFileProviders_SAS.Name = "iconButtonOpenFileProviders_SAS";
+            this.iconButtonOpenFileProviders_SAS.Size = new System.Drawing.Size(45, 47);
+            this.iconButtonOpenFileProviders_SAS.TabIndex = 10;
+            this.toolTipButton_SAS.SetToolTip(this.iconButtonOpenFileProviders_SAS, "Выбрать файл для открытия");
+            this.iconButtonOpenFileProviders_SAS.UseVisualStyleBackColor = true;
+            this.iconButtonOpenFileProviders_SAS.Click += new System.EventHandler(this.iconButtonOpenFileProviders_SAS_Click);
+            this.iconButtonOpenFileProviders_SAS.MouseEnter += new System.EventHandler(this.iconButtonOpenFile_SAS_MouseEnter);
+            // 
+            // DataGridViewProviders_SAS
+            // 
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.DataGridViewProviders_SAS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.DataGridViewProviders_SAS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DataGridViewProviders_SAS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridViewProviders_SAS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.DataGridViewProviders_SAS.ColumnHeadersHeight = 35;
+            this.DataGridViewProviders_SAS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewProviders_SAS.DefaultCellStyle = dataGridViewCellStyle9;
+            this.DataGridViewProviders_SAS.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.DataGridViewProviders_SAS.Location = new System.Drawing.Point(75, 134);
+            this.DataGridViewProviders_SAS.Name = "DataGridViewProviders_SAS";
+            this.DataGridViewProviders_SAS.RowHeadersVisible = false;
+            this.DataGridViewProviders_SAS.RowHeadersWidth = 51;
+            this.DataGridViewProviders_SAS.RowTemplate.Height = 24;
+            this.DataGridViewProviders_SAS.Size = new System.Drawing.Size(892, 471);
+            this.DataGridViewProviders_SAS.TabIndex = 9;
+            this.DataGridViewProviders_SAS.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.DataGridViewProviders_SAS.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.DataGridViewProviders_SAS.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.DataGridViewProviders_SAS.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.DataGridViewProviders_SAS.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.DataGridViewProviders_SAS.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.DataGridViewProviders_SAS.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.DataGridViewProviders_SAS.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.DataGridViewProviders_SAS.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridViewProviders_SAS.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.DataGridViewProviders_SAS.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.DataGridViewProviders_SAS.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.DataGridViewProviders_SAS.ThemeStyle.HeaderStyle.Height = 35;
+            this.DataGridViewProviders_SAS.ThemeStyle.ReadOnly = false;
+            this.DataGridViewProviders_SAS.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.DataGridViewProviders_SAS.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DataGridViewProviders_SAS.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.DataGridViewProviders_SAS.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.DataGridViewProviders_SAS.ThemeStyle.RowsStyle.Height = 24;
+            this.DataGridViewProviders_SAS.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
+            this.DataGridViewProviders_SAS.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
             // 
             // ButtonSearchProviders_SAS
             // 
@@ -423,23 +724,8 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.ButtonSearchProviders_SAS.Size = new System.Drawing.Size(57, 45);
             this.ButtonSearchProviders_SAS.TabIndex = 7;
             this.toolTipButton_SAS.SetToolTip(this.ButtonSearchProviders_SAS, "Найти поставщика по ФИО");
+            this.ButtonSearchProviders_SAS.Click += new System.EventHandler(this.ButtonSearchProviders_SAS_Click);
             this.ButtonSearchProviders_SAS.MouseEnter += new System.EventHandler(this.ButtonSearchDepartments_SAS_MouseEnter);
-            // 
-            // ButtonOpenProviders_SAS
-            // 
-            this.ButtonOpenProviders_SAS.BorderRadius = 10;
-            this.ButtonOpenProviders_SAS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.ButtonOpenProviders_SAS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.ButtonOpenProviders_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ButtonOpenProviders_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ButtonOpenProviders_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(65)))), ((int)(((byte)(210)))));
-            this.ButtonOpenProviders_SAS.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.ButtonOpenProviders_SAS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.ButtonOpenProviders_SAS.Location = new System.Drawing.Point(452, 7);
-            this.ButtonOpenProviders_SAS.Name = "ButtonOpenProviders_SAS";
-            this.ButtonOpenProviders_SAS.Size = new System.Drawing.Size(170, 43);
-            this.ButtonOpenProviders_SAS.TabIndex = 6;
-            this.ButtonOpenProviders_SAS.Text = "Открыть файл";
             // 
             // TextBoxSearchProviders_SAS
             // 
@@ -559,6 +845,84 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             // 
             this.openFileDialogChooseData_SAS.FileName = "openFileDialogChooseData";
             // 
+            // TextBoxMaxEmployees_SAS
+            // 
+            this.TextBoxMaxEmployees_SAS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMaxEmployees_SAS.BorderRadius = 10;
+            this.TextBoxMaxEmployees_SAS.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxMaxEmployees_SAS.DefaultText = "";
+            this.TextBoxMaxEmployees_SAS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxMaxEmployees_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxMaxEmployees_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxMaxEmployees_SAS.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxMaxEmployees_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMaxEmployees_SAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxMaxEmployees_SAS.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextBoxMaxEmployees_SAS.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxMaxEmployees_SAS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxMaxEmployees_SAS.Location = new System.Drawing.Point(480, 63);
+            this.TextBoxMaxEmployees_SAS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TextBoxMaxEmployees_SAS.Name = "TextBoxMaxEmployees_SAS";
+            this.TextBoxMaxEmployees_SAS.PasswordChar = '\0';
+            this.TextBoxMaxEmployees_SAS.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMaxEmployees_SAS.PlaceholderText = "";
+            this.TextBoxMaxEmployees_SAS.ReadOnly = true;
+            this.TextBoxMaxEmployees_SAS.SelectedText = "";
+            this.TextBoxMaxEmployees_SAS.Size = new System.Drawing.Size(187, 48);
+            this.TextBoxMaxEmployees_SAS.TabIndex = 17;
+            // 
+            // TextBoxMaxProviders_SAS
+            // 
+            this.TextBoxMaxProviders_SAS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMaxProviders_SAS.BorderRadius = 10;
+            this.TextBoxMaxProviders_SAS.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxMaxProviders_SAS.DefaultText = "";
+            this.TextBoxMaxProviders_SAS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxMaxProviders_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxMaxProviders_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxMaxProviders_SAS.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxMaxProviders_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMaxProviders_SAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxMaxProviders_SAS.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextBoxMaxProviders_SAS.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxMaxProviders_SAS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxMaxProviders_SAS.Location = new System.Drawing.Point(486, 63);
+            this.TextBoxMaxProviders_SAS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TextBoxMaxProviders_SAS.Name = "TextBoxMaxProviders_SAS";
+            this.TextBoxMaxProviders_SAS.PasswordChar = '\0';
+            this.TextBoxMaxProviders_SAS.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMaxProviders_SAS.PlaceholderText = "";
+            this.TextBoxMaxProviders_SAS.ReadOnly = true;
+            this.TextBoxMaxProviders_SAS.SelectedText = "";
+            this.TextBoxMaxProviders_SAS.Size = new System.Drawing.Size(191, 48);
+            this.TextBoxMaxProviders_SAS.TabIndex = 18;
+            // 
+            // TextBoxMinProviders_SAS
+            // 
+            this.TextBoxMinProviders_SAS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMinProviders_SAS.BorderRadius = 10;
+            this.TextBoxMinProviders_SAS.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxMinProviders_SAS.DefaultText = "";
+            this.TextBoxMinProviders_SAS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxMinProviders_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxMinProviders_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxMinProviders_SAS.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxMinProviders_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMinProviders_SAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxMinProviders_SAS.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextBoxMinProviders_SAS.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxMinProviders_SAS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxMinProviders_SAS.Location = new System.Drawing.Point(173, 63);
+            this.TextBoxMinProviders_SAS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TextBoxMinProviders_SAS.Name = "TextBoxMinProviders_SAS";
+            this.TextBoxMinProviders_SAS.PasswordChar = '\0';
+            this.TextBoxMinProviders_SAS.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMinProviders_SAS.PlaceholderText = "";
+            this.TextBoxMinProviders_SAS.ReadOnly = true;
+            this.TextBoxMinProviders_SAS.SelectedText = "";
+            this.TextBoxMinProviders_SAS.Size = new System.Drawing.Size(191, 48);
+            this.TextBoxMinProviders_SAS.TabIndex = 19;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -585,7 +949,9 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageDepartments_SAS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewDepartments_SAS)).EndInit();
             this.tabPageEmployees_SAS.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewEmployees_SAS)).EndInit();
             this.tabPageProviders_SAS.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewProviders_SAS)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -611,8 +977,6 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
         private Guna.UI2.WinForms.Guna2TextBox TextBoxSearchEmpoyees_SAS;
         private Guna.UI2.WinForms.Guna2TextBox TextBoxSearchProviders_SAS;
         private Guna.UI2.WinForms.Guna2DataGridView DataGridViewDepartments_SAS;
-        private Guna.UI2.WinForms.Guna2Button ButtonOpenEmployees_SAS;
-        private Guna.UI2.WinForms.Guna2Button ButtonOpenProviders_SAS;
         private System.Windows.Forms.OpenFileDialog openFileDialogChooseData_SAS;
         private System.Windows.Forms.SaveFileDialog saveFileDialogTask_SAS;
         private Guna.UI2.WinForms.Guna2Button ButtonSearchDepartments_SAS;
@@ -621,6 +985,21 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
         private Guna.UI2.WinForms.Guna2TextBox TextBoxSearchDepartments_SAS;
         private FontAwesome.Sharp.IconButton iconButtonOpenFile_SAS;
         private FontAwesome.Sharp.IconButton iconButtonSave_SAS;
+        private FontAwesome.Sharp.IconButton iconButtonSaveFileEmployees_SAS;
+        private FontAwesome.Sharp.IconButton iconButtonOpenFileEmployees_SAS;
+        private Guna.UI2.WinForms.Guna2DataGridView DataGridViewEmployees_SAS;
+        private FontAwesome.Sharp.IconButton iconButtonSaveFileProviders_SAS;
+        private FontAwesome.Sharp.IconButton iconButtonOpenFileProviders_SAS;
+        private Guna.UI2.WinForms.Guna2DataGridView DataGridViewProviders_SAS;
+        private FontAwesome.Sharp.IconButton iconButtonStatistic_SAS;
+        private FontAwesome.Sharp.IconButton iconButtonMax_SAS;
+        private FontAwesome.Sharp.IconButton iconButtonMin_SAS;
+        private FontAwesome.Sharp.IconButton iconButtonMaxEmployees_SAS;
+        private FontAwesome.Sharp.IconButton iconButtonMinEmployees_SAS;
+        private Guna.UI2.WinForms.Guna2TextBox TextBoxMinEmployees_SAS;
+        private Guna.UI2.WinForms.Guna2TextBox TextBoxMaxEmployees_SAS;
+        private Guna.UI2.WinForms.Guna2TextBox TextBoxMinProviders_SAS;
+        private Guna.UI2.WinForms.Guna2TextBox TextBoxMaxProviders_SAS;
     }
 }
 

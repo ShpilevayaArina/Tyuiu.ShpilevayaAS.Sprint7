@@ -41,7 +41,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             // 
             this.buttonClose_SAS.Location = new System.Drawing.Point(692, 415);
             this.buttonClose_SAS.Name = "buttonClose_SAS";
-            this.buttonClose_SAS.Size = new System.Drawing.Size(96, 23);
+            this.buttonClose_SAS.Size = new System.Drawing.Size(96, 32);
             this.buttonClose_SAS.TabIndex = 0;
             this.buttonClose_SAS.Text = "Ок";
             this.buttonClose_SAS.UseVisualStyleBackColor = true;

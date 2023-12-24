@@ -38,9 +38,9 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             // 
             // buttonClose_SAS
             // 
-            this.buttonClose_SAS.Location = new System.Drawing.Point(462, 187);
+            this.buttonClose_SAS.Location = new System.Drawing.Point(512, 225);
             this.buttonClose_SAS.Name = "buttonClose_SAS";
-            this.buttonClose_SAS.Size = new System.Drawing.Size(111, 23);
+            this.buttonClose_SAS.Size = new System.Drawing.Size(111, 42);
             this.buttonClose_SAS.TabIndex = 8;
             this.buttonClose_SAS.Text = "Ок";
             this.buttonClose_SAS.UseVisualStyleBackColor = true;
@@ -51,7 +51,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.pictureBoxAvatar_SAS.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAvatar_SAS.Image")));
             this.pictureBoxAvatar_SAS.Location = new System.Drawing.Point(12, 12);
             this.pictureBoxAvatar_SAS.Name = "pictureBoxAvatar_SAS";
-            this.pictureBoxAvatar_SAS.Size = new System.Drawing.Size(189, 198);
+            this.pictureBoxAvatar_SAS.Size = new System.Drawing.Size(237, 255);
             this.pictureBoxAvatar_SAS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxAvatar_SAS.TabIndex = 7;
             this.pictureBoxAvatar_SAS.TabStop = false;
@@ -59,7 +59,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             // labelInfo_SAS
             // 
             this.labelInfo_SAS.AutoSize = true;
-            this.labelInfo_SAS.Location = new System.Drawing.Point(207, 12);
+            this.labelInfo_SAS.Location = new System.Drawing.Point(255, 41);
             this.labelInfo_SAS.Name = "labelInfo_SAS";
             this.labelInfo_SAS.Size = new System.Drawing.Size(368, 153);
             this.labelInfo_SAS.TabIndex = 6;
@@ -69,13 +69,11 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(598, 226);
+            this.ClientSize = new System.Drawing.Size(636, 276);
             this.Controls.Add(this.buttonClose_SAS);
             this.Controls.Add(this.pictureBoxAvatar_SAS);
             this.Controls.Add(this.labelInfo_SAS);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormAbout";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "О программе";
