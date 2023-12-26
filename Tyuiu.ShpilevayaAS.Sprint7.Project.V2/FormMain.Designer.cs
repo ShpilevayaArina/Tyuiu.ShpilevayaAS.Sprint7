@@ -54,6 +54,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.TextBoxSearchDepartments_SAS = new Guna.UI2.WinForms.Guna2TextBox();
             this.DataGridViewDepartments_SAS = new Guna.UI2.WinForms.Guna2DataGridView();
             this.tabPageEmployees_SAS = new System.Windows.Forms.TabPage();
+            this.TextBoxMaxEmployees_SAS = new Guna.UI2.WinForms.Guna2TextBox();
             this.TextBoxMinEmployees_SAS = new Guna.UI2.WinForms.Guna2TextBox();
             this.iconButtonMaxEmployees_SAS = new FontAwesome.Sharp.IconButton();
             this.iconButtonMinEmployees_SAS = new FontAwesome.Sharp.IconButton();
@@ -63,6 +64,8 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.ButtonSearchEmpoyees_SAS = new Guna.UI2.WinForms.Guna2Button();
             this.TextBoxSearchEmpoyees_SAS = new Guna.UI2.WinForms.Guna2TextBox();
             this.tabPageProviders_SAS = new System.Windows.Forms.TabPage();
+            this.TextBoxMinProviders_SAS = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TextBoxMaxProviders_SAS = new Guna.UI2.WinForms.Guna2TextBox();
             this.iconButtonMax_SAS = new FontAwesome.Sharp.IconButton();
             this.iconButtonMin_SAS = new FontAwesome.Sharp.IconButton();
             this.iconButtonSaveFileProviders_SAS = new FontAwesome.Sharp.IconButton();
@@ -78,9 +81,6 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.toolTipButton_SAS = new System.Windows.Forms.ToolTip(this.components);
             this.openFileDialogChooseData_SAS = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialogTask_SAS = new System.Windows.Forms.SaveFileDialog();
-            this.TextBoxMaxEmployees_SAS = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TextBoxMaxProviders_SAS = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TextBoxMinProviders_SAS = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo_SAS)).BeginInit();
             this.tabListOfSections_SAS.SuspendLayout();
             this.tabPageMainMenu_SAS.SuspendLayout();
@@ -223,7 +223,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.iconButtonStatistic_SAS.Name = "iconButtonStatistic_SAS";
             this.iconButtonStatistic_SAS.Size = new System.Drawing.Size(44, 49);
             this.iconButtonStatistic_SAS.TabIndex = 9;
-            this.toolTipButton_SAS.SetToolTip(this.iconButtonStatistic_SAS, "Посмотреть график роста количества открытых филиалов");
+            this.toolTipButton_SAS.SetToolTip(this.iconButtonStatistic_SAS, "Посмотреть график ежегодного открытия новых филиалов\r\n");
             this.iconButtonStatistic_SAS.UseVisualStyleBackColor = true;
             this.iconButtonStatistic_SAS.Click += new System.EventHandler(this.iconButtonStatistic_SAS_Click);
             this.iconButtonStatistic_SAS.MouseEnter += new System.EventHandler(this.iconButtonStatistic_SAS_MouseEnter);
@@ -378,6 +378,32 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageEmployees_SAS.Size = new System.Drawing.Size(969, 613);
             this.tabPageEmployees_SAS.TabIndex = 2;
             this.tabPageEmployees_SAS.Text = "Сотрудники";
+            // 
+            // TextBoxMaxEmployees_SAS
+            // 
+            this.TextBoxMaxEmployees_SAS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMaxEmployees_SAS.BorderRadius = 10;
+            this.TextBoxMaxEmployees_SAS.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxMaxEmployees_SAS.DefaultText = "";
+            this.TextBoxMaxEmployees_SAS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxMaxEmployees_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxMaxEmployees_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxMaxEmployees_SAS.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxMaxEmployees_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMaxEmployees_SAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxMaxEmployees_SAS.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextBoxMaxEmployees_SAS.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxMaxEmployees_SAS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxMaxEmployees_SAS.Location = new System.Drawing.Point(480, 63);
+            this.TextBoxMaxEmployees_SAS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TextBoxMaxEmployees_SAS.Name = "TextBoxMaxEmployees_SAS";
+            this.TextBoxMaxEmployees_SAS.PasswordChar = '\0';
+            this.TextBoxMaxEmployees_SAS.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMaxEmployees_SAS.PlaceholderText = "";
+            this.TextBoxMaxEmployees_SAS.ReadOnly = true;
+            this.TextBoxMaxEmployees_SAS.SelectedText = "";
+            this.TextBoxMaxEmployees_SAS.Size = new System.Drawing.Size(187, 48);
+            this.TextBoxMaxEmployees_SAS.TabIndex = 17;
             // 
             // TextBoxMinEmployees_SAS
             // 
@@ -587,6 +613,58 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.tabPageProviders_SAS.Size = new System.Drawing.Size(969, 613);
             this.tabPageProviders_SAS.TabIndex = 3;
             this.tabPageProviders_SAS.Text = "Поставщики";
+            // 
+            // TextBoxMinProviders_SAS
+            // 
+            this.TextBoxMinProviders_SAS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMinProviders_SAS.BorderRadius = 10;
+            this.TextBoxMinProviders_SAS.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxMinProviders_SAS.DefaultText = "";
+            this.TextBoxMinProviders_SAS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxMinProviders_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxMinProviders_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxMinProviders_SAS.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxMinProviders_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMinProviders_SAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxMinProviders_SAS.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextBoxMinProviders_SAS.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxMinProviders_SAS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxMinProviders_SAS.Location = new System.Drawing.Point(173, 63);
+            this.TextBoxMinProviders_SAS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TextBoxMinProviders_SAS.Name = "TextBoxMinProviders_SAS";
+            this.TextBoxMinProviders_SAS.PasswordChar = '\0';
+            this.TextBoxMinProviders_SAS.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMinProviders_SAS.PlaceholderText = "";
+            this.TextBoxMinProviders_SAS.ReadOnly = true;
+            this.TextBoxMinProviders_SAS.SelectedText = "";
+            this.TextBoxMinProviders_SAS.Size = new System.Drawing.Size(191, 48);
+            this.TextBoxMinProviders_SAS.TabIndex = 19;
+            // 
+            // TextBoxMaxProviders_SAS
+            // 
+            this.TextBoxMaxProviders_SAS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMaxProviders_SAS.BorderRadius = 10;
+            this.TextBoxMaxProviders_SAS.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxMaxProviders_SAS.DefaultText = "";
+            this.TextBoxMaxProviders_SAS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxMaxProviders_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxMaxProviders_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxMaxProviders_SAS.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxMaxProviders_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMaxProviders_SAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxMaxProviders_SAS.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextBoxMaxProviders_SAS.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxMaxProviders_SAS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxMaxProviders_SAS.Location = new System.Drawing.Point(486, 63);
+            this.TextBoxMaxProviders_SAS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TextBoxMaxProviders_SAS.Name = "TextBoxMaxProviders_SAS";
+            this.TextBoxMaxProviders_SAS.PasswordChar = '\0';
+            this.TextBoxMaxProviders_SAS.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.TextBoxMaxProviders_SAS.PlaceholderText = "";
+            this.TextBoxMaxProviders_SAS.ReadOnly = true;
+            this.TextBoxMaxProviders_SAS.SelectedText = "";
+            this.TextBoxMaxProviders_SAS.Size = new System.Drawing.Size(191, 48);
+            this.TextBoxMaxProviders_SAS.TabIndex = 18;
             // 
             // iconButtonMax_SAS
             // 
@@ -844,84 +922,6 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             // openFileDialogChooseData_SAS
             // 
             this.openFileDialogChooseData_SAS.FileName = "openFileDialogChooseData";
-            // 
-            // TextBoxMaxEmployees_SAS
-            // 
-            this.TextBoxMaxEmployees_SAS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.TextBoxMaxEmployees_SAS.BorderRadius = 10;
-            this.TextBoxMaxEmployees_SAS.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBoxMaxEmployees_SAS.DefaultText = "";
-            this.TextBoxMaxEmployees_SAS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TextBoxMaxEmployees_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TextBoxMaxEmployees_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBoxMaxEmployees_SAS.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBoxMaxEmployees_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.TextBoxMaxEmployees_SAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxMaxEmployees_SAS.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TextBoxMaxEmployees_SAS.ForeColor = System.Drawing.Color.Black;
-            this.TextBoxMaxEmployees_SAS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxMaxEmployees_SAS.Location = new System.Drawing.Point(480, 63);
-            this.TextBoxMaxEmployees_SAS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.TextBoxMaxEmployees_SAS.Name = "TextBoxMaxEmployees_SAS";
-            this.TextBoxMaxEmployees_SAS.PasswordChar = '\0';
-            this.TextBoxMaxEmployees_SAS.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.TextBoxMaxEmployees_SAS.PlaceholderText = "";
-            this.TextBoxMaxEmployees_SAS.ReadOnly = true;
-            this.TextBoxMaxEmployees_SAS.SelectedText = "";
-            this.TextBoxMaxEmployees_SAS.Size = new System.Drawing.Size(187, 48);
-            this.TextBoxMaxEmployees_SAS.TabIndex = 17;
-            // 
-            // TextBoxMaxProviders_SAS
-            // 
-            this.TextBoxMaxProviders_SAS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.TextBoxMaxProviders_SAS.BorderRadius = 10;
-            this.TextBoxMaxProviders_SAS.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBoxMaxProviders_SAS.DefaultText = "";
-            this.TextBoxMaxProviders_SAS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TextBoxMaxProviders_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TextBoxMaxProviders_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBoxMaxProviders_SAS.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBoxMaxProviders_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.TextBoxMaxProviders_SAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxMaxProviders_SAS.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TextBoxMaxProviders_SAS.ForeColor = System.Drawing.Color.Black;
-            this.TextBoxMaxProviders_SAS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxMaxProviders_SAS.Location = new System.Drawing.Point(486, 63);
-            this.TextBoxMaxProviders_SAS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.TextBoxMaxProviders_SAS.Name = "TextBoxMaxProviders_SAS";
-            this.TextBoxMaxProviders_SAS.PasswordChar = '\0';
-            this.TextBoxMaxProviders_SAS.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.TextBoxMaxProviders_SAS.PlaceholderText = "";
-            this.TextBoxMaxProviders_SAS.ReadOnly = true;
-            this.TextBoxMaxProviders_SAS.SelectedText = "";
-            this.TextBoxMaxProviders_SAS.Size = new System.Drawing.Size(191, 48);
-            this.TextBoxMaxProviders_SAS.TabIndex = 18;
-            // 
-            // TextBoxMinProviders_SAS
-            // 
-            this.TextBoxMinProviders_SAS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.TextBoxMinProviders_SAS.BorderRadius = 10;
-            this.TextBoxMinProviders_SAS.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBoxMinProviders_SAS.DefaultText = "";
-            this.TextBoxMinProviders_SAS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TextBoxMinProviders_SAS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TextBoxMinProviders_SAS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBoxMinProviders_SAS.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBoxMinProviders_SAS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.TextBoxMinProviders_SAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxMinProviders_SAS.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TextBoxMinProviders_SAS.ForeColor = System.Drawing.Color.Black;
-            this.TextBoxMinProviders_SAS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxMinProviders_SAS.Location = new System.Drawing.Point(173, 63);
-            this.TextBoxMinProviders_SAS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.TextBoxMinProviders_SAS.Name = "TextBoxMinProviders_SAS";
-            this.TextBoxMinProviders_SAS.PasswordChar = '\0';
-            this.TextBoxMinProviders_SAS.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.TextBoxMinProviders_SAS.PlaceholderText = "";
-            this.TextBoxMinProviders_SAS.ReadOnly = true;
-            this.TextBoxMinProviders_SAS.SelectedText = "";
-            this.TextBoxMinProviders_SAS.Size = new System.Drawing.Size(191, 48);
-            this.TextBoxMinProviders_SAS.TabIndex = 19;
             // 
             // FormMain
             // 

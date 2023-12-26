@@ -23,6 +23,8 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
         }
         static int rowsDepartmens = 86;
         static int columnsDepartmens = 5;
+        static int columnsSearchDepartments = 5;
+
         static int rowsEmployees = 86;
         static int columnsEmployees = 6;
         static int rowsProviders = 86;
@@ -165,7 +167,6 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
         {
             openFileDialogChooseData_SAS.ShowDialog();
             openFilePath = openFileDialogChooseData_SAS.FileName;
-            //TextBoxSearchDepartments_SAS.Enabled = true;
             try
             {
                 Font newFont = new Font("Segoe UI", 10, FontStyle.Bold);

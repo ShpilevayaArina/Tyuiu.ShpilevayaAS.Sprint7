@@ -31,5 +31,34 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2.Lib
             return arrayValues;
         }
 
+        public Dictionary<string, int> GetNumberOfDepartments(string filePath)
+        {
+            Dictionary<string, int> elementCount = new Dictionary<string, int> { {"2019", 0}, {"2020", 0}, {"2021", 0}, {"2022", 0}, {"2023", 0} };
+
+            using (StreamReader reader = new StreamReader(filePath))
+            {
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    string[] columns = line.Split(';'); 
+
+                    if (columns.Length >= 5)
+                    {
+                        string year = columns[4]; 
+
+                        if (elementCount.ContainsKey(year))
+                        {
+                            elementCount[year]++;
+                        }
+                        else
+                        {
+                            elementCount[year] = 1;
+                        }
+                    }
+                }
+            }
+            return elementCount;
+
+        }
     }
 }
