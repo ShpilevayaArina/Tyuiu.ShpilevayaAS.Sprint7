@@ -444,6 +444,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.iconButtonMaxEmployees_SAS.Size = new System.Drawing.Size(94, 42);
             this.iconButtonMaxEmployees_SAS.TabIndex = 13;
             this.iconButtonMaxEmployees_SAS.Text = "max";
+            this.toolTipButton_SAS.SetToolTip(this.iconButtonMaxEmployees_SAS, "Найти максимальный размер капитала руководителя филиала");
             this.iconButtonMaxEmployees_SAS.UseVisualStyleBackColor = true;
             this.iconButtonMaxEmployees_SAS.Click += new System.EventHandler(this.iconButtonMaxEmployees_SAS_Click);
             // 
@@ -460,6 +461,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.iconButtonMinEmployees_SAS.Size = new System.Drawing.Size(94, 42);
             this.iconButtonMinEmployees_SAS.TabIndex = 14;
             this.iconButtonMinEmployees_SAS.Text = "min";
+            this.toolTipButton_SAS.SetToolTip(this.iconButtonMinEmployees_SAS, "Найти минимальный размер капитала руководителя филиала");
             this.iconButtonMinEmployees_SAS.UseVisualStyleBackColor = true;
             this.iconButtonMinEmployees_SAS.Click += new System.EventHandler(this.iconButtonMinEmployees_SAS_Click);
             // 
@@ -679,6 +681,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.iconButtonMax_SAS.Size = new System.Drawing.Size(94, 42);
             this.iconButtonMax_SAS.TabIndex = 12;
             this.iconButtonMax_SAS.Text = "max";
+            this.toolTipButton_SAS.SetToolTip(this.iconButtonMax_SAS, "Найти максимальный размер стоимости поставки");
             this.iconButtonMax_SAS.UseVisualStyleBackColor = true;
             this.iconButtonMax_SAS.Click += new System.EventHandler(this.iconButtonMax_SAS_Click);
             // 
@@ -695,6 +698,7 @@ namespace Tyuiu.ShpilevayaAS.Sprint7.Project.V2
             this.iconButtonMin_SAS.Size = new System.Drawing.Size(94, 42);
             this.iconButtonMin_SAS.TabIndex = 12;
             this.iconButtonMin_SAS.Text = "min";
+            this.toolTipButton_SAS.SetToolTip(this.iconButtonMin_SAS, "Найти минимальный размер стоимости поставки");
             this.iconButtonMin_SAS.UseVisualStyleBackColor = true;
             this.iconButtonMin_SAS.Click += new System.EventHandler(this.iconButtonMin_SAS_Click);
             // 
